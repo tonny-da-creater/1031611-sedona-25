@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Sedona</title>
+  <title>Фото и видео</title>
 </head>
 <body class="page__body">
   <header class="main-header main-header--wrapper">
@@ -24,16 +24,68 @@
     </nav>
   </header>
   <main class="main-content main-content--wrapper">
-    <section class="gallery">
+    <section class="entry-section">
+      <h2 class="visually-hidden">Седона</h2>
+      <img class="entry-section__img" src="img/sedona.svg" alt="Седона">
+    </section>
+    <section class="gallery gallery--wrapper">
       <h2 class="feature__title title title--dark">НАСТОЯЩИЙ ГОРОДОК</h2>
       <p class="feature__description description description--dark">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и экономике.</p>
       <ul class="gallery__list gallery-list gallery--wrapper">
         <li class="gallery-list__item galley-item">
-          <a class="gallery-list__link" href=""><img class="gallery-list__img" src="" alt="неродные просторы"></a>
-
+          <a class="gallery-item__link" href="#"><img class="gallery-item__img" src="img/gallery-sedona-road.jpg" alt="дорога Седоны"></a>
+          <div class="gallery-item__footer">
+            <b class="gallery-item__description description description--bold description--dark">неродные просторы</b>
+            <address class="gallery-item__author">Автор фото: Борис</address>
+            <div class="gallery-item__like-block like-block">
+              <img class="like-block__img" src="img/like-icon.svg" alt="нравится">
+              <span class="like-block__count">1350</span>
+            </div>
+          </div>
+        </li>
+        <li class="gallery-list__item galley-item">
+          <a class="gallery-item__link" href="#"><img class="gallery-item__img" src="img/gallery-vegetation.jpg" alt="растительность Седоны"></a>
+          <div class="gallery-item__footer">
+            <b class="gallery-item__description description description--bold description--dark">Местная растительность</b>
+            <address class="gallery-item__author">Автор фото: Сергей</address>
+            <div class="gallery-item__like-block like-block">
+              <img class="like-block__img" src="img/like-icon.svg" alt="нравится">
+              <span class="like-block__count">143</span>
+            </div>
+          </div>
+        </li>
+        <li class="gallery-list__item galley-item">
+          <a class="gallery-item__link" href="#"><img class="gallery-item__img" src="img/gallery-road-to-the-north.jpg" alt="Дорога Седоны на север"></a>
+          <div class="gallery-item__footer">
+            <b class="gallery-item__description description description--bold description--dark">Дорога на север</b>
+            <address class="gallery-item__author">Автор фото: Петр</address>
+            <div class="gallery-item__like-block like-block">
+              <img class="like-block__img" src="img/like-icon.svg" alt="нравится">
+              <span class="like-block__count">96</span>
+            </div>
+          </div>
+        </li>
+        <li class="gallery-list__item galley-item">
+          <a class="gallery-item__link" href="#"><img class="gallery-item__img" src="img/gallery-devils-bridge.jpg" alt="Мост дьявола"></a>
+          <div class="gallery-item__footer">
+            <b class="gallery-item__description description description--bold description--dark">Мост дьявола</b>
+            <address class="gallery-item__author">Автор фото: Антон</address>
+            <div class="gallery-item__like-block like-block">
+              <img class="like-block__img" src="img/like-icon.svg" alt="нравится">
+              <span class="like-block__count">254</span>
+            </div>
+          </div>
         </li>
       </ul>
     </section>
+    <div class="video-presentation-section video-presentation-section--wrapper">
+      <h3 class="visually-hidden">Видео о Седоне</h3>
+      <b class="video-presentation-section__title title title--dark">Все еще сомневаетесь?</b>
+      <p class="video-presentation-section__description description description--dark">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
+      <div class="video-wrapper">
+        <img class="video-wrapper__video-preview" src="img/video-preview.jpg" alt="превью видео">
+      </div>
+    </div>
   </main>
   <footer class="main-footer main-footer--wrapper">
     <a class="main-footer__hashtag" href="#">#VISITSEDONA</a>
