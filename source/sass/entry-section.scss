@@ -1,0 +1,14 @@
+.entry-section {
+  background: url('../img/entry-section-background.jpg') no-repeat center /cover;
+  background-color: black;
+
+    &--wrapper {
+      padding-top: 90px;
+      padding-bottom: 85px;
+      text-align: center;
+    }
+}
+
+.entry-section .visually-hidden {
+  display: none;
+}

@@ -1,0 +1,13 @@
+.description {
+  font-family: $font-family;
+  font-size: 14px;
+  text-transform: uppercase;
+
+    &--dark {
+      color: #333333;
+    }
+
+    &--light {
+      color: #ffffff;
+    }
+}

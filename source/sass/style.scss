@@ -1,1 +1,20 @@
 // Начните писать стили здесь
+@import 'variables.scss';
+@import 'fonts.scss';
+@import 'title.scss';
+@import 'description.scss';
+@import 'header.scss';
+@import 'navigation.scss';
+@import 'entry-section.scss';
+@import 'about-section.scss';
+@import 'feature.scss';
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
