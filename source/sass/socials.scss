@@ -1,12 +1,18 @@
-.socials__list {
+.socials {
+  list-style: none;
   margin: 0;
   padding: 0;
+  display: flex;
 }
 
 .socials__item {
   width: 48px;
   height: 48px;
-  display: inline-block;
+  margin-right: 6px;
+
+    &:last-child {
+      margin-right: 0;
+    }
 
     &--primary-color {
       background-color: $primary-color;
