@@ -1,0 +1,13 @@
+.features-section{
+    &--wrapper {
+      padding-top: 23px;
+      padding-bottom: 52px;
+    }
+}
+
+.features-section__item {
+  margin-bottom: 22px;
+    &:last-child {
+      margin-bottom: 0;
+    }
+}

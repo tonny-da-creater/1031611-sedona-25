@@ -1,0 +1,14 @@
+.socials__list {
+  margin: 0;
+  padding: 0;
+}
+
+.socials__item {
+  width: 48px;
+  height: 48px;
+  display: inline-block;
+
+    &--primary-color {
+      background-color: $primary-color;
+    }
+}

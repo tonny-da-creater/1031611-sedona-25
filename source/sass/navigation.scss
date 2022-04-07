@@ -1,6 +1,9 @@
 .main-nav {
   background-color: $primary-color;
-  text-align: center;
+
+    &--wrapper {
+      text-align: center;
+    }
 }
 
 .main-nav__item {
