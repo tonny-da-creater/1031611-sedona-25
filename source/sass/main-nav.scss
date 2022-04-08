@@ -1,5 +1,11 @@
 .main-nav {
   background-color: $primary-color;
+  width: 100%;
+
+    &--wrapper {
+      position: absolute;
+      top: 0;
+    }
 }
 
 .main-nav__item {
@@ -7,4 +13,14 @@
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+
+.main-nav__toggle {
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  margin-right: 20px;
+  margin-top: 17px;
 }

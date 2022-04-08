@@ -1,0 +1,19 @@
+.button {
+  text-transform: uppercase;
+  font-family: $font-family;
+  font-weight: 700;
+  height: 58px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 21px;
+  line-height: 26px;
+
+    &--primary-color {
+      background-color: $primary-color;
+    }
+
+    &--text-light {
+      color: #ffffff;
+    }
+}

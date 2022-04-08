@@ -1,0 +1,24 @@
+.sentence {
+  background-color: #ffffff;
+    &--wrapper {
+      padding-left: 18px;
+      padding-right: 18px;
+      padding-top: 38px;
+      padding-bottom: 49px;
+    }
+
+    &--text-center {
+      text-align: center;
+    }
+}
+
+.sentence__title {
+  font-size: 21px;
+  display: block;
+  margin-bottom: 22px;
+}
+
+.sentence__description {
+  margin-bottom: 22px;
+}
+

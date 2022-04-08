@@ -1,0 +1,21 @@
+.main-footer {
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+
+    &--wrapper {
+      padding-top: 38px;
+      padding-bottom: 23px;
+      text-align: center;
+    }
+}
+
+.main-footer__title{
+  font-size: 21px;
+  margin-bottom: 34px;
+  display: block;
+}
+
+.main-footer__socials {
+  margin-bottom: 40px;
+}

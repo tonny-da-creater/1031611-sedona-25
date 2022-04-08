@@ -1,3 +1,17 @@
 .attractions__item {
   padding: 35px 15px;
 }
+
+.attractions__wrapper {
+  padding-left: 18px;
+  padding-right: 18px;
+  background-color: #EEEEEE;
+}
+
+.attractions__wrapper .attractions__item {
+  border-bottom: 1px solid #D6D6D6;
+
+    &:last-child {
+      border-bottom: none;
+    }
+}
