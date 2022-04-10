@@ -1,15 +1,14 @@
 .description {
-  font-family: $font-family;
   font-size: 14px;
   text-transform: uppercase;
   line-height: 21px;
   font-weight: 400;
 
-    &--dark {
-      color: #333333;
-    }
+  &--dark {
+    color: #333333;
+  }
 
-    &--light {
-      color: #ffffff;
-    }
+  &--light {
+    color: #ffffff;
+  }
 }

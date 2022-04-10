@@ -5,15 +5,15 @@
 .feature {
   padding-left: 47px;
 
-    &--house {
-      background: url('../img/icon-house.svg') no-repeat;
-    }
+  &--house {
+    background: url("../img/icon-house.svg") no-repeat;
+  }
 
-    &--food {
-      background: url('../img/icon-burger.svg') no-repeat;
-    }
+  &--food {
+    background: url("../img/icon-burger.svg") no-repeat;
+  }
 
-    &--souvenirs {
-      background: url('../img/icon-gift.svg') no-repeat;
-    }
+  &--souvenirs {
+    background: url("../img/icon-gift.svg") no-repeat;
+  }
 }

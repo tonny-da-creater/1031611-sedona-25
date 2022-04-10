@@ -2,22 +2,22 @@
   list-style: none;
   margin: 0;
   padding: 0;
-  display: flex;
-  justify-content: center;
 }
 
 .socials__item {
   width: 48px;
   height: 48px;
   margin-right: 6px;
+  display: inline-block;
+  vertical-align: middle;
 
-    &:last-child {
-      margin-right: 0;
-    }
+  &:last-child {
+    margin-right: 0;
+  }
 
-    &--primary-color {
-      background-color: $primary-color;
-    }
+  &--primary-color {
+    background-color: $primary-color;
+  }
 }
 
 .socials__link {

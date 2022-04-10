@@ -1,10 +1,8 @@
 .entry-section {
-  background: url('../img/entry-section-background.jpg') no-repeat center /cover;
-  background-color: black;
+  background: url("../img/entry-section-background.jpg") no-repeat center /cover;
+  background-color: #000000;
 
-    &--wrapper {
-      padding-top: 90px;
-      padding-bottom: 85px;
-      text-align: center;
-    }
+  &--wrapper {
+    text-align: center;
+  }
 }

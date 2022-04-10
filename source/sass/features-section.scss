@@ -1,15 +1,18 @@
-.features-section{
-    &--wrapper {
-      padding-top: 23px;
-      padding-bottom: 52px;
-      padding-right: 18px;
-      padding-left: 18px;
-    }
+.features-section {
+  background-color: #ffffff;
+
+  &--wrapper {
+    padding-top: 23px;
+    padding-bottom: 52px;
+    padding-right: 18px;
+    padding-left: 18px;
+  }
 }
 
 .features-section__item {
   margin-bottom: 22px;
-    &:last-child {
-      margin-bottom: 0;
-    }
+
+  &:last-child {
+    margin-bottom: 0;
+  }
 }

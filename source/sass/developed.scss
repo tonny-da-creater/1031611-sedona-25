@@ -1,14 +1,15 @@
 .developed {
-  font-family: 'PT Sans';
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
   line-height: 21px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 
 .developed__description {
+  vertical-align: middle;
   color: #000000;
+}
+
+.developed__img {
+  vertical-align: middle;
 }

@@ -1,15 +1,16 @@
 .sentence {
   background-color: #ffffff;
-    &--wrapper {
-      padding-left: 18px;
-      padding-right: 18px;
-      padding-top: 38px;
-      padding-bottom: 49px;
-    }
 
-    &--text-center {
-      text-align: center;
-    }
+  &--wrapper {
+    padding-left: 18px;
+    padding-right: 18px;
+    padding-top: 38px;
+    padding-bottom: 49px;
+  }
+
+  &--text-center {
+    text-align: center;
+  }
 }
 
 .sentence__title {
@@ -21,4 +22,3 @@
 .sentence__description {
   margin-bottom: 22px;
 }
-

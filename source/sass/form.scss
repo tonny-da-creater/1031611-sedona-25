@@ -1,0 +1,139 @@
+.form, .form__type-text-group, .form__type-radio-group, .form__type-checkbox-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.form {
+  padding-bottom: 48px;
+  background-color: #ffffff;
+}
+
+.form__title {
+  margin: 0 auto;
+  font-size: 18px;
+  display: block;
+  margin-bottom: 20px;
+}
+
+.form__type-text-group,
+.form__type-radio-group,
+.form__type-checkbox-group,
+.form__type-area {
+  border-top: 1px solid #e5e5e5;
+  padding-top: 24px;
+  padding-bottom: 39px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.form__type-text-group .form__label {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  text-transform: uppercase;
+  color: #333333;
+}
+
+.form__type-radio-group .form__label {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  color: #000000;
+}
+
+.form__type-checkbox-group .form__label {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  color: #000000;
+}
+
+.form__label {
+  margin-left: 16px;
+
+  &--font-normal {
+    font-weight: 400;
+  }
+
+  &--font-bold {
+    font-weight: 700;
+  }
+}
+
+.form__type-text-group .form__input {
+  padding-left: 16px;
+  width: 100%;
+}
+
+.form__input {
+  background: #f2f2f2;
+  border: none;
+  box-sizing: border-box;
+
+  &--text {
+    height: 58px;
+  }
+}
+
+.form__input::placeholder {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  color: rgba(0, 0, 0, 0.3);
+  font-family: $font-family;
+}
+
+.form__input--black-placeholder::placeholder {
+  color: #000000;
+}
+
+.form__item-wrapper {
+  display: flex;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.form__icon-wrapper {
+  width: 58px;
+  height: 58px;
+  background-color: #e6e6e6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.form__type-area {
+  text-align: center;
+  padding-bottom: 0;
+}
+
+.form__textarea {
+  background: #f2f2f2;
+  width: 100%;
+  padding: 16px;
+  box-sizing: border-box;
+  border: none;
+  margin-bottom: 56px;
+
+  &::placeholder {
+    font-family: $font-family;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 26px;
+    color: rgba(0, 0, 0, 0.3);
+  }
+}
+
+.form__button-submit {
+  width: 100%;
+}
+
+.form__hint {
+  font-family: $font-family;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 21px;
+  color: rgba(51, 51, 51, 0.6);
+  text-align: right;
+  text-transform: uppercase;
+}

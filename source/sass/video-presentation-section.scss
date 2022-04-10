@@ -1,0 +1,26 @@
+.video-presentation-section {
+  background-color: #ffffff;
+
+  &--wrapper {
+    text-align: center;
+    padding-right: 20px;
+    padding-left: 20px;
+    padding-top: 17px;
+  }
+}
+
+.video-presentation-section__title {
+  margin-bottom: 35px;
+  display: block;
+}
+
+.video-presentation-section__description {
+  margin: 0 auto 38px auto;
+  width: 266px;
+}
+
+.video-presentation-section__video-preview {
+  display: block;
+  width: 100%;
+  object-fit: cover;
+}
