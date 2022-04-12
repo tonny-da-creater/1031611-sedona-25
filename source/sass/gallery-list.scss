@@ -2,18 +2,15 @@
   list-style: none;
   padding: 0;
   margin: 0;
-  background-color: #ffffff;
+  background-color: $white;
 }
 
 .gallery-list__item {
-  padding-top: 24px;
-  padding-bottom: 25px;
-  padding-right: 20px;
-  padding-left: 20px;
-  border-top: 1px solid #e5e5e5;
+  padding: 24px 20px 25px 20px;
+  border-top: 1px solid $very-light-grey;
 
   &:last-child {
-    border-bottom: 1px solid #e5e5e5;
+    border-bottom: 1px solid $very-light-grey;
   }
 }
 
@@ -27,9 +24,9 @@
 .gallery-list__description {
   font-style: normal;
   font-weight: 700;
-  font-size: 14px;
+  font-size: $font-size-s;
   line-height: 21px;
-  color: #000000;
+  color: $black;
   text-transform: uppercase;
   display: block;
   margin-bottom: 5px;
@@ -38,8 +35,8 @@
 .gallery-list__author {
   font-style: normal;
   font-weight: 400;
-  font-size: 14px;
+  font-size: $font-size-s;
   line-height: 21px;
-  color: #333333;
+  color: $light-black;
   margin-bottom: 11px;
 }

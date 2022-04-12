@@ -4,7 +4,7 @@
 
 
 .attraction--text-color-light {
-  color: #ffffff;
+  color: $white;
 }
 
 .attraction--text-center {
@@ -17,13 +17,13 @@
 }
 
 .attraction__num {
-  font-size: 14px;
+  font-size: $font-size-s;
   font-weight: 700;
   line-height: 21px;
   margin-bottom: 17px;
   display: block;
 
   &--light {
-    color: #ffffff;
+    color: $white;
   }
 }

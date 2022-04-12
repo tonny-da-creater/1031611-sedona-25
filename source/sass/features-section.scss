@@ -1,11 +1,8 @@
 .features-section {
-  background-color: #ffffff;
+  background-color: $white;
 
   &--wrapper {
-    padding-top: 23px;
-    padding-bottom: 52px;
-    padding-right: 18px;
-    padding-left: 18px;
+    padding: 23px 18px 52px 18px;
   }
 }
 

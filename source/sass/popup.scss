@@ -1,6 +1,6 @@
 .popup {
   box-sizing: border-box;
-  background-color: #13b213;
+  background-color: $white;
   padding-top: 45px;
   margin-bottom: 20px;
   text-align: center;
@@ -45,6 +45,6 @@
 }
 
 .popup__footer {
-  background: #f2f2f2;
+  background: $pale-grey;
   padding: 20px;
 }
