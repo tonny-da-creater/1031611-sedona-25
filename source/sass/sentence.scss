@@ -1,12 +1,9 @@
 .sentence {
   background-color: $white;
+  text-align: center;
 
   &--wrapper {
     padding: 38px 18px 49px 18px;
-  }
-
-  &--text-center {
-    text-align: center;
   }
 }
 
