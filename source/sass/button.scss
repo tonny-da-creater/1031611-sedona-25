@@ -1,19 +1,13 @@
 .button {
   text-transform: uppercase;
-  font-weight: 700;
+  font-weight: $font-weight-bold;
   height: 58px;
   display: flex;
   justify-content: center;
   align-items: center;
   font-size: $font-size-l;
-  line-height: 26px;
+  line-height: $line-height-m;
   border: none;
-
-  &--primary-color {
-    background-color: $primary-color;
-  }
-
-  &--text-light {
-    color: $white;
-  }
+  background-color: $primary-color;
+  color: $white;
 }

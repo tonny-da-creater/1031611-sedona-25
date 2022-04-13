@@ -10,13 +10,10 @@
   margin-right: 6px;
   display: inline-block;
   vertical-align: middle;
+  background-color: $primary-color;
 
   &:last-child {
     margin-right: 0;
-  }
-
-  &--primary-color {
-    background-color: $primary-color;
   }
 }
 

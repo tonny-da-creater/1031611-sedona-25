@@ -1,19 +1,18 @@
-.feature__title {
-  margin-bottom: 16px;
+.feature {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-column-gap: 10px;
+  grid-row-gap: 16px;
 }
 
-.feature {
-  padding-left: 47px;
+.feature__title {
+  align-self: center;
+  font-size: $font-size-m;
+  color: $black;
+}
 
-  &--house {
-    background: url("../img/icon-house.svg") no-repeat;
-  }
-
-  &--food {
-    background: url("../img/icon-burger.svg") no-repeat;
-  }
-
-  &--souvenirs {
-    background: url("../img/icon-gift.svg") no-repeat;
-  }
+.feature__description {
+  font-size: $font-size-s;
+  color: $light-black;
+  grid-column: 2;
 }

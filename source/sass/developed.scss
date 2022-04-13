@@ -1,8 +1,8 @@
 .developed {
   font-style: normal;
-  font-weight: 400;
+  font-weight: $font-weight-normal;
   font-size: $font-size-s;
-  line-height: 21px;
+  line-height: $line-height-s;
 }
 
 .developed__description {

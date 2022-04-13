@@ -1,27 +1,23 @@
-.attraction--primary-color {
-  background-color: $primary-color;
-}
-
-.attraction--text-color-light {
-  color: $white;
-}
-
-.attraction {
-  text-align: center;
-}
-
 .attraction__title {
   margin-bottom: 11px;
 }
 
-.attraction__num {
-  font-size: $font-size-s;
-  font-weight: 700;
-  line-height: 21px;
-  margin-bottom: 17px;
-  display: block;
+.attraction {
+  text-align: center;
 
-  &--light {
+  &--primary-color {
+    background-color: $primary-color;
+  }
+
+  &--text-color-light {
     color: $white;
   }
+}
+
+.attraction__num {
+  font-size: $font-size-s;
+  font-weight: $font-weight-normal;
+  line-height: $line-height-s;
+  margin-bottom: 17px;
+  display: block;
 }

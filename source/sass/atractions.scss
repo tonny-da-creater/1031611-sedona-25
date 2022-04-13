@@ -16,6 +16,21 @@
   }
 }
 
+.attractions__wrapper .attraction__title {
+  color: $black;
+}
+
+.attractions__wrapper .attraction__description {
+  color: $light-black;
+}
+
+.attractions__wrapper .attraction__num {
+  color: $light-black;
+  font-size: $font-size-s;
+  font-weight: $font-weight-normal;
+  line-height: $line-height-s;
+}
+
 .attractions__img {
   display: block;
   width: 100%;

@@ -23,9 +23,9 @@
 
 .gallery-list__description {
   font-style: normal;
-  font-weight: 700;
+  font-weight: $font-weight-bold;
   font-size: $font-size-s;
-  line-height: 21px;
+  line-height: $line-height-s;
   color: $black;
   text-transform: uppercase;
   display: block;
@@ -34,9 +34,9 @@
 
 .gallery-list__author {
   font-style: normal;
-  font-weight: 400;
+  font-weight: $font-weight-normal;
   font-size: $font-size-s;
-  line-height: 21px;
+  line-height: $line-height-s;
   color: $light-black;
   margin-bottom: 11px;
 }

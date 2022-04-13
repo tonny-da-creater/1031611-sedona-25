@@ -1,14 +1,6 @@
 .description {
-  font-size: $font-size-s;
   text-transform: uppercase;
-  line-height: 21px;
-  font-weight: 400;
-
-  &--dark {
-    color: $light-black;
-  }
-
-  &--light {
-    color: $white;
-  }
+  line-height: $line-height-s;
+  font-weight: $font-weight-normal;
+  font-size: $font-size-s;
 }

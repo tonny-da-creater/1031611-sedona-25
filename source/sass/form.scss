@@ -16,6 +16,7 @@
   font-size: $font-size-m;
   display: block;
   margin-bottom: 20px;
+  color: $black;
 }
 
 .form__type-text-group,
@@ -27,7 +28,7 @@
 }
 
 .form__type-text-group .form__label {
-  font-weight: 400;
+  font-weight: $font-weight-normal;
   font-size: $font-size-s;
   line-height: 21px;
   text-transform: uppercase;
@@ -35,14 +36,14 @@
 }
 
 .form__type-radio-group .form__label {
-  font-weight: 700;
+  font-weight: $font-weight-bold;
   font-size: $font-size-m;
   line-height: 26px;
   color: $black;
 }
 
 .form__type-checkbox-group .form__label {
-  font-weight: 700;
+  font-weight: $font-weight-bold;
   font-size: $font-size-m;
   line-height: 26px;
   color: $black;
@@ -50,41 +51,27 @@
 
 .form__label {
   margin-left: 16px;
-
-  &--font-normal {
-    font-weight: 400;
-  }
-
-  &--font-bold {
-    font-weight: 700;
-  }
 }
 
 .form__type-text-group .form__input {
   padding-left: 16px;
   width: 100%;
+  height: 58px;
 }
 
 .form__input {
   background: $pale-grey;
   border: none;
   box-sizing: border-box;
-
-  &--text {
-    height: 58px;
-  }
-}
-
-.form__input::placeholder {
-  font-weight: 700;
+  color: $black;
+  font-weight: $font-weight-bold;
   font-size: $font-size-m;
   line-height: 26px;
-  color: $transparent-black;
-  font-family: $font-family;
-}
 
-.form__input--black-placeholder::placeholder {
-  color: $black;
+  &::placeholder {
+    color: $transparent-black;
+    font-family: $font-family;
+  }
 }
 
 .form__item-wrapper {
@@ -114,12 +101,16 @@
   box-sizing: border-box;
   border: none;
   margin-bottom: 56px;
+  color: $black;
+  font-weight: $font-weight-bold;
+  font-size: $font-size-m;
+  line-height: 26px;
 
   &::placeholder {
     font-family: $font-family;
-    font-weight: 700;
+    font-weight: $font-weight-bold;
     font-size: $font-size-m;
-    line-height: 26px;
+    line-height: $line-height-m;
     color: $transparent-black;
   }
 }
@@ -130,9 +121,9 @@
 
 .form__hint {
   font-family: $font-family;
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 21px;
+  font-weight: $font-weight-bold;
+  font-size: $font-size-xs;
+  line-height: $line-height-s;
   color: $secondary-transpatent-black;
   text-align: right;
   text-transform: uppercase;

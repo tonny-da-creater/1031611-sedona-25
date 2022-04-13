@@ -11,9 +11,10 @@
 }
 
 .main-footer__title {
-  font-size: 21px;
+  font-size: $font-size-l;
   margin-bottom: 34px;
   display: block;
+  color: $black;
 }
 
 .main-footer__socials {
