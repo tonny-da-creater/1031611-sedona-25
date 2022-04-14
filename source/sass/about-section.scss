@@ -9,8 +9,9 @@
 
 .about__title {
   font-size: $font-size-m;
-  margin-bottom: 35px;
   color: $black;
+  max-width: 500px;
+  margin: 0 auto 35px;
 }
 
 .about__description {

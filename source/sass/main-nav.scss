@@ -1,20 +1,15 @@
 .main-nav {
-  background-color: $primary-color;
   width: 100%;
+}
 
-  &--wrapper {
-    position: absolute;
-    top: 0;
+.main-nav--wrapper {
+  position: absolute;
+  top: 0;
+
+  @media all and (min-width: $tablet) {
+    position: static;
   }
 }
-
-.main-nav__item {
-  height: 55px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
 
 .main-nav__toggle {
   position: absolute;
@@ -23,4 +18,8 @@
   right: 0;
   margin-right: 20px;
   margin-top: 17px;
+
+  @media all and (min-width: $tablet) {
+    display: none;
+  }
 }
