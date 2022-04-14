@@ -1,0 +1,23 @@
+.attraction__title {
+  margin-bottom: 11px;
+}
+
+.attraction {
+  text-align: center;
+
+  &--primary-color {
+    background-color: $primary-color;
+  }
+
+  &--text-color-light {
+    color: $white;
+  }
+}
+
+.attraction__num {
+  font-size: $font-size-s;
+  font-weight: $font-weight-normal;
+  line-height: 21px;
+  margin-bottom: 17px;
+  display: block;
+}

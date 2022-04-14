@@ -1,0 +1,15 @@
+.features-section {
+  background-color: $white;
+
+  &--wrapper {
+    padding: 23px 18px 52px 18px;
+  }
+}
+
+.features-section__item {
+  margin-bottom: 22px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}

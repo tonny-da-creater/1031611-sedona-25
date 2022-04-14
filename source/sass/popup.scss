@@ -1,0 +1,54 @@
+.popup {
+  box-sizing: border-box;
+  padding-top: 45px;
+  text-align: center;
+
+  &--error {
+    width: 320px;
+    height: 280px;
+  }
+
+  &--sent {
+    width: 320px;
+    height: 323px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+}
+
+.popup--error .description {
+  margin-bottom: 28px;
+}
+
+.popup--sent .description {
+  margin-bottom: 43px;
+}
+
+.popup--error .button {
+  width: 180px;
+}
+
+.popup--sent .button {
+  width: 280px;
+}
+
+.popup__title {
+  display: block;
+  margin-bottom: 24px;
+  font-size: $font-size-m;
+}
+
+.popup__description {
+  width: 210px;
+  margin: 0 auto;
+}
+
+.popup__button-submit {
+  margin: 0 auto;
+}
+
+.popup__footer {
+  background: $pale-grey;
+  padding: 20px;
+}

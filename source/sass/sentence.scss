@@ -1,0 +1,20 @@
+.sentence {
+  background-color: $white;
+  text-align: center;
+
+  &--wrapper {
+    padding: 38px 18px 49px 18px;
+  }
+}
+
+.sentence__title {
+  font-size: $font-size-l;
+  display: block;
+  margin-bottom: 22px;
+  color: $black;
+}
+
+.sentence__description {
+  margin-bottom: 22px;
+  color: $light-black;
+}
