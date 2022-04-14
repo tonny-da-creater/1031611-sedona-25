@@ -1,0 +1,12 @@
+.main-header {
+  background-color: $white;
+  height: 56px;
+
+  &--wrapper {
+    position: relative;
+  }
+}
+
+.main-header__logo-wrapper {
+  text-align: center;
+}

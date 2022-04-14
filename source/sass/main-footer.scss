@@ -1,0 +1,22 @@
+.main-footer {
+  background-color: $white;
+  display: flex;
+  flex-direction: column;
+
+  &--wrapper {
+    padding-top: 38px;
+    padding-bottom: 23px;
+    text-align: center;
+  }
+}
+
+.main-footer__title {
+  font-size: $font-size-l;
+  margin-bottom: 34px;
+  display: block;
+  color: $black;
+}
+
+.main-footer__socials {
+  margin-bottom: 40px;
+}

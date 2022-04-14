@@ -1,0 +1,38 @@
+.attractions__item {
+  padding: 35px 15px;
+}
+
+.attractions__wrapper {
+  padding-left: 18px;
+  padding-right: 18px;
+  background-color: $light-grey;
+}
+
+.attractions__wrapper .attractions__item {
+  border-bottom: 1px solid $grey;
+
+  &:last-child {
+    border-bottom: none;
+  }
+}
+
+.attractions__wrapper .attraction__title {
+  color: $black;
+}
+
+.attractions__wrapper .attraction__description {
+  color: $light-black;
+}
+
+.attractions__wrapper .attraction__num {
+  color: $light-black;
+  font-size: $font-size-s;
+  font-weight: $font-weight-normal;
+  line-height: 21px;
+}
+
+.attractions__img {
+  display: block;
+  width: 100%;
+  object-fit: cover;
+}

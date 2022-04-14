@@ -1,0 +1,8 @@
+.entry-section {
+  background: url("../img/entry-section-background.jpg") no-repeat center /cover;
+  background-color: $black;
+
+  &--wrapper {
+    text-align: center;
+  }
+}
