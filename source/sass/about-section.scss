@@ -12,6 +12,10 @@
   color: $black;
   max-width: 500px;
   margin: 0 auto 35px;
+
+  @media all and (min-width: $tablet) {
+    font-size: $font-size-l;
+  }
 }
 
 .about__description {

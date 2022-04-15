@@ -1,11 +1,27 @@
+@media all and (min-width: $tablet) {
+  .attractions {
+    display: flex;
+  }
+}
+
 .attractions__item {
   padding: 35px 15px;
+}
+
+@media all and (min-width: $tablet) {
+  .attractions__item--order {
+    order: 2;
+  }
 }
 
 .attractions__wrapper {
   padding-left: 18px;
   padding-right: 18px;
   background-color: $light-grey;
+
+  @media all and (min-width: $tablet) {
+    display: flex;
+  }
 }
 
 .attractions__wrapper .attractions__item {
@@ -35,4 +51,9 @@
   display: block;
   width: 100%;
   object-fit: cover;
+
+  @media all and (min-width: $tablet) {
+    width: 66.6%;
+    order: 1;
+  }
 }

@@ -3,13 +3,22 @@
 
   &--wrapper {
     padding: 23px 18px 52px 18px;
+
+    @media all and (min-width: $tablet) {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+    }
   }
 }
 
 .features-section__item {
-  margin-bottom: 22px;
+  margin: 0 auto 22px;
 
   &:last-child {
     margin-bottom: 0;
+  }
+
+  @media all and (min-width: $tablet) {
+    margin: 0;
   }
 }
