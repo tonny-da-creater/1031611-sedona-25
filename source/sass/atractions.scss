@@ -1,5 +1,7 @@
-@media all and (min-width: $tablet) {
-  .attractions {
+.attractions {
+  background-color: $light-grey;
+
+  @media all and (min-width: $tablet) {
     display: flex;
   }
 }
@@ -15,19 +17,25 @@
 }
 
 .attractions__wrapper {
-  padding-left: 18px;
-  padding-right: 18px;
-  background-color: $light-grey;
+  width: 88.75%;
+  max-width: 1064px;
+  margin: 0 auto;
 
   @media all and (min-width: $tablet) {
     display: flex;
+    padding: 42px 0;
   }
 }
 
 .attractions__wrapper .attractions__item {
   border-bottom: 1px solid $grey;
+  justify-content: start;
 
   &:last-child {
+    border-bottom: none;
+  }
+
+  @media all and (min-width: $tablet) {
     border-bottom: none;
   }
 }

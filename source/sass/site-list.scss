@@ -7,7 +7,8 @@
   @media all and (min-width: $tablet) {
     display: flex;
     background-color: $white;
-    padding: 0 40px;
+    max-width: 1200px;
+    margin: 0 auto;
   }
 }
 
@@ -20,6 +21,9 @@
 
   @media all and (min-width: $tablet) {
     box-shadow: none;
+    // width: 153px;
+    width: 19.92%;
+    max-width: 240px;
   }
 
   &:first-child {
@@ -38,6 +42,13 @@
     }
   }
 }
+
+@media all and (min-width: $tablet) {
+  .site-list__item:nth-child(2) {
+    margin-right: 19.92%;
+  }
+}
+
 
 .site-list__link {
   color: $white;

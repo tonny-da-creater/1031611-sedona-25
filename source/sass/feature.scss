@@ -1,13 +1,16 @@
 .feature {
   display: grid;
   grid-template-columns: 39px auto;
-  grid-column-gap: 10px;
   grid-row-gap: 16px;
-  max-width: 282px;
+  grid-column-gap: 10px;
+  justify-self: center;
+  width: 282px;
 
   @media all and (min-width: $tablet) {
     grid-template-columns: 1fr;
     text-align: center;
+    justify-self: center;
+    width: auto;
   }
 }
 
