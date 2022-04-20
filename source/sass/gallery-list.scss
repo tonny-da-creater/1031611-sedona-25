@@ -7,6 +7,7 @@
   @media all and (min-width: $tablet) {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    grid-template-rows: 480px auto auto;
   }
 }
 
@@ -41,6 +42,13 @@
   }
 }
 
+.gallery-list__item:first-child .gallery-list__img {
+
+  @media all and (min-width: $tablet) {
+    height: 400px;
+  }
+}
+
 .gallery-list__item-footer {
 
   @media all and (min-width: $tablet) {
@@ -49,6 +57,12 @@
     grid-template-columns: 1fr auto;
     align-items: center;
     padding: 22px 20px 15px;
+  }
+}
+
+.gallery-list__item:nth-child(3) .gallery-list__item-footer {
+  @media all and (min-width: $tablet) {
+    background-color: $darkgrey;
   }
 }
 

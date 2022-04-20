@@ -3,24 +3,40 @@
 
   &--wrapper {
     text-align: center;
-    padding-right: 20px;
-    padding-left: 20px;
-    padding-top: 17px;
+    padding: 17px 20px 0;
+
+    @media all and (min-width: $tablet){
+      padding: 57px 60px 40px;
+    }
   }
 }
 
 .video-presentation-section__title {
   margin-bottom: 35px;
+  font-size: $font-size-m;
   display: block;
+
+  @media all and (min-width: $tablet) {
+    font-size: 30px;
+  }
 }
 
 .video-presentation-section__description {
-  margin: 0 auto 38px auto;
-  width: 266px;
+  margin: 0 auto 38px;
+  width: 96.625%;
+  max-width: 445px;
+
+  @media all and (min-width: $tablet) {
+    margin-bottom: 86px;
+  }
 }
 
 .video-presentation-section__video-preview {
   display: block;
   width: 100%;
   object-fit: cover;
+
+  @media all and (min-width: $tablet) {
+    height: 500px;
+  }
 }
