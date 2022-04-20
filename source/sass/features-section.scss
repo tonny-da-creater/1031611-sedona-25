@@ -1,15 +1,32 @@
 .features-section {
   background-color: $white;
+  padding: 23px 0 52px 0;
 
-  &--wrapper {
-    padding: 23px 18px 52px 18px;
+  @media all and (min-width: $tablet) {
+    padding: 60px 0;
+  }
+}
+
+.features-section__wrapper {
+  margin: 0 auto;
+  width: 88.75%;
+  max-width: 1064px;
+
+  @media all and (min-width: $tablet) {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 50px;
   }
 }
 
 .features-section__item {
-  margin-bottom: 22px;
+  margin: 0 auto 22px;
 
   &:last-child {
     margin-bottom: 0;
+  }
+
+  @media all and (min-width: $tablet) {
+    margin: 0;
   }
 }

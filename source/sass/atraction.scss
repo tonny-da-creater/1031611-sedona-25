@@ -1,9 +1,18 @@
 .attraction__title {
   margin-bottom: 11px;
+
+  @media all and (min-width: $tablet) {
+    font-size: $font-size-l;
+  }
 }
 
 .attraction {
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
 
   &--primary-color {
     background-color: $primary-color;
@@ -12,6 +21,16 @@
   &--text-color-light {
     color: $white;
   }
+
+  @media all and (min-width: $tablet) {
+    width: 33.3%;
+    padding: 0 32px;
+  }
+}
+
+.attraction__description {
+  margin: 0 auto;
+  max-width: 282px;
 }
 
 .attraction__num {

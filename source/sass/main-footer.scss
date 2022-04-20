@@ -1,12 +1,21 @@
 .main-footer {
   background-color: $white;
+}
+
+.main-footer__wrapper {
+  padding-top: 38px;
+  padding-bottom: 23px;
+  text-align: center;
   display: flex;
   flex-direction: column;
+  align-items: center;
+  width: 84.89%;
+  max-width: 964px;
+  margin: 0 auto;
 
-  &--wrapper {
-    padding-top: 38px;
-    padding-bottom: 23px;
-    text-align: center;
+  @media all and (min-width: $tablet) {
+    flex-direction: row;
+    justify-content: space-between;
   }
 }
 
@@ -15,8 +24,16 @@
   margin-bottom: 34px;
   display: block;
   color: $black;
+
+  @media all and (min-width: $tablet) {
+    margin-bottom: 0;
+  }
 }
 
 .main-footer__socials {
   margin-bottom: 40px;
+
+  @media all and (min-width: $tablet) {
+    margin-bottom: 0;
+  }
 }
