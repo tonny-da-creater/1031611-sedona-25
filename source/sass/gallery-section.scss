@@ -1,4 +1,8 @@
 .gallery-section--wrapper {
   margin: 0 auto;
   max-width: 648px;
+
+  @media all and (min-width: $desktop) {
+    max-width: 100%;
+  }
 }

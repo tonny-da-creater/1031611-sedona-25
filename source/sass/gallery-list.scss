@@ -9,11 +9,17 @@
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 480px auto auto;
   }
+
+  @media all and (min-width: $desktop) {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 400px 267px;
+  }
 }
 
 .gallery-list__item {
   padding: 24px 20px 25px 20px;
   border-top: 1px solid $very-light-grey;
+  display: grid;
 
   @media all and (min-width: $tablet) {
     border-top: none;
@@ -23,11 +29,27 @@
   &:last-child {
     border-bottom: 1px solid $very-light-grey;
   }
+
+  @media all and (min-width: $desktop) {
+    grid-template-rows: 267px 80px;
+  }
 }
 
 .gallery-list__item:first-child {
   @media all and (min-width: $tablet) {
     grid-column: 1 / -1;
+  }
+
+  @media all and (min-width: $desktop) {
+    grid-template-rows: 400px 80px;
+  }
+}
+
+.gallery-list__link-img {
+
+  @media all and (min-width: $desktop) {
+    grid-row: 1;
+    grid-column: 1 / span 2;
   }
 }
 
@@ -39,6 +61,7 @@
 
   @media all and (min-width: $tablet) {
     margin-bottom: 0;
+    height: 267px;
   }
 }
 
@@ -58,11 +81,22 @@
     align-items: center;
     padding: 22px 20px 15px;
   }
+
+  @media all and (min-width: $desktop) {
+    grid-row: 1;
+    grid-column: 1 / span 2;
+    align-self: end;
+    background-color: rgba(0, 0, 0, 0.3);
+  }
 }
 
 .gallery-list__item:nth-child(3) .gallery-list__item-footer {
   @media all and (min-width: $tablet) {
     background-color: $darkgrey;
+  }
+
+  @media all and (min-width: $desktop) {
+    background-color: rgba(0, 0, 0, 0.3);
   }
 }
 
@@ -79,6 +113,10 @@
   @media all and (min-width: $tablet) {
     margin-bottom: 0;
   }
+
+  @media all and (min-width: $desktop) {
+    color: $white;
+  }
 }
 
 .gallery-list__author {
@@ -92,6 +130,10 @@
   @media all and (min-width: $tablet) {
     grid-column: 1;
     margin-bottom: 0;
+  }
+
+  @media all and (min-width: $desktop) {
+    color: $white;
   }
 }
 

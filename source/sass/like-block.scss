@@ -2,8 +2,15 @@
   display: flex;
 }
 
-.like-block__img {
+.like-block__icon-svg {
   margin-right: 14px;
+}
+
+.like-block__icon-svg path {
+  @media all and (min-width: $desktop) {
+    fill: $white;
+    opacity: 1;
+  }
 }
 
 .like-block__count {
@@ -12,4 +19,8 @@
   font-size: $font-size-s;
   line-height: 21px;
   color: $black;
+
+  @media all and (min-width: $desktop) {
+    color: $white;
+  }
 }
