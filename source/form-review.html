@@ -50,20 +50,21 @@
         <label class="form__label" for="first-name">ИМЯ*:</label>
         <div class="form__item-wrapper">
           <input class="form__input" type="text" name="first-name" id="first-name" required placeholder="Введите имя">
-      </div>
-      <label class="form__label" for="last-name">ФАМИЛИЯ*:</label>
-      <div class="form__item-wrapper">
-        <input class="form__input" type="text" name="last-name" id="last-name" required placeholder="Введите фамилию">
-      </div>
-      <label class="form__label" for="patronymic">Отчество:</label>
-      <div class="form__item-wrapper">
-        <input class="form__input" type="text" name="patronymic" id="patronymic" placeholder="Введите отчество">
-      </div>
+        </div>
+        <label class="form__label" for="last-name">ФАМИЛИЯ*:</label>
+        <div class="form__item-wrapper">
+          <input class="form__input" type="text" name="last-name" id="last-name" required placeholder="Введите фамилию">
+        </div>
+        <label class="form__label" for="patronymic">Отчество:</label>
+        <div class="form__item-wrapper">
+          <input class="form__input" type="text" name="patronymic" id="patronymic" placeholder="Введите отчество">
+        </div>
       </div>
       <div class="form__type-text-group">
         <b class="form__title title">Контактная информация:</b>
-        <label class="form__label" for="phone">Контактный телефон*:</label>
+
         <div class="form__item-wrapper">
+          <label class="form__label" for="phone">Контактный телефон*:</label>
           <input class="form__input" type="tel" name="phone" id="phone" placeholder="Введите телефон" required>
           <div class="form__icon-wrapper">
             <img class="form__icon" width="18" height="18" src="img/phone.svg" alt="телефон">
@@ -79,36 +80,42 @@
       </div>
       <b class="form__title title">Ваше Общее впечатление:</b>
       <div class="form__type-radio-group">
-        <div class="form__item-wrapper">
-          <input class="form__input form__input--radio" type="radio" name="grade" id="positive"><label class="form__label" for="positive">Скорее положительное</label>
-        </div>
-        <div class="form__item-wrapper">
-          <input class="form__input form__input--radio" type="radio" name="grade" id="negative"><label class="form__label" for="negative">Скорее отрицательное</label>
-        </div>
-        <div class="form__item-wrapper">
-          <input class="form__input form__input--radio" type="radio" name="grade" id="dont-know"><label class="form__label" for="dont-know">Затрудняюсь ответить</label>
+        <div class="form__type-radio-group-container">
+          <p class="form__item-wrapper">
+            <input class="form__input form__input--radio" type="radio" name="grade" id="positive"><label class="form__label" for="positive">Скорее положительное</label>
+          </p>
+          <p class="form__item-wrapper">
+            <input class="form__input form__input--radio" type="radio" name="grade" id="negative"><label class="form__label" for="negative">Скорее отрицательное</label>
+          </p>
+          <p class="form__item-wrapper">
+            <input class="form__input form__input--radio" type="radio" name="grade" id="dont-know"><label class="form__label" for="dont-know">Затрудняюсь ответить</label>
+          </p>
         </div>
       </div>
       <b class="form__title title">посещенные  достопримечательности:</b>
       <div class="form__type-checkbox-group">
-        <div class="form__item-wrapper">
-          <input class="form__input form__input--checkbox" id="devils-bridge" type="checkbox" checked><label class="form__label" for="devils-bridge">Мост Дьявола</label>
-        </div>
-        <div class="form__item-wrapper">
-          <input class="form__input form__input--checkbox" id="mount-bell" type="checkbox" checked><label class="form__label" for="mount-bell">Гора-Колокол</label>
-        </div>
-        <div class="form__item-wrapper">
-          <input class="form__input form__input--checkbox" id="slide-park" type="checkbox" checked><label class="form__label" for="slide-park">Слайд-парк</label>
-        </div>
-        <div class="form__item-wrapper">
-          <input class="form__input form__input--checkbox" id="red-rocks" type="checkbox"><label class="form__label" for="red-rocks">Красные скалы</label>
+        <div class="form__type-checkbox-group-container">
+          <p class="form__item-wrapper">
+            <input class="form__input form__input--checkbox" id="devils-bridge" type="checkbox" checked><label class="form__label" for="devils-bridge">Мост Дьявола</label>
+          </p>
+          <p class="form__item-wrapper">
+            <input class="form__input form__input--checkbox" id="mount-bell" type="checkbox" checked><label class="form__label" for="mount-bell">Гора-Колокол</label>
+          </p>
+          <p class="form__item-wrapper">
+            <input class="form__input form__input--checkbox" id="slide-park" type="checkbox" checked><label class="form__label" for="slide-park">Слайд-парк</label>
+          </p>
+          <p class="form__item-wrapper">
+            <input class="form__input form__input--checkbox" id="red-rocks" type="checkbox"><label class="form__label" for="red-rocks">Красные скалы</label>
+          </p>
         </div>
       </div>
       <b class="form__title title">Опишите свои эмоции:</b>
       <div class="form__type-area">
-        <textarea class="form__textarea" cols="30" rows="5" placeholder="Опишите подробно все свои восторги "></textarea>
-        <button class="form__button-submit button" type="submit">ОТПРАВИТЬ ОТЗЫВ</button>
-        <p class="form__hint">* — обязательные поля</p>
+        <div class="form__type-area-container">
+          <textarea class="form__textarea" cols="30" rows="5" placeholder="Опишите подробно все свои восторги "></textarea>
+          <button class="form__button-submit button" type="submit">ОТПРАВИТЬ ОТЗЫВ</button>
+          <p class="form__hint">* — обязательные поля</p>
+        </div>
       </div>
     </form>
   </main>

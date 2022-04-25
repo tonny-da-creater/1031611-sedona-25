@@ -10,6 +10,7 @@
   @media all and (min-width: $tablet) {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    width: 84.375%;
   }
 }
 
@@ -22,14 +23,21 @@
   }
 }
 
-.form__type-radio-group {
-  display: grid;
-  justify-content: center;
+.form__type-radio-group-container {
+  display: flex;
+  flex-direction: column;
 
   @media all and (min-width: $tablet) {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, 280px);
-    justify-content: center;
+    margin: 0 auto;
+    width: 578px;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  @media all and (min-width: $desktop) {
+    width: 854px;
+    justify-content: space-between;
   }
 }
 
@@ -53,6 +61,39 @@
   padding: 24px 0 39px 0;
 }
 
+.form__type-text-group:first-child {
+
+  @media all and (min-width: $tablet) {
+    padding-right: 43px;
+    border-right: 1px solid #DBDBDB;
+  }
+}
+
+.form__type-text-group:nth-child(2) {
+
+  @media all and (min-width: $tablet) {
+    padding-left: 26px;
+  }
+}
+
+.form__type-text-group:nth-child(2) .form__title {
+  @media all and (min-width: $tablet) {
+    text-align: left;
+  }
+}
+
+// .form__type-text-group:nth-child(2) .form__item-wrapper {
+//   @media all and (min-width: $tablet) {
+//     width: 280px;
+//     margin-left: auto;
+//   }
+// }
+
+.form__type-radio-group + .form__title {
+  margin: 0 auto;
+  width: 308px;
+}
+
 .form__type-text-group .form__label {
   font-weight: $font-weight-normal;
   font-size: $font-size-s;
@@ -68,12 +109,36 @@
   color: $black;
 }
 
-.form__type-checkbox-group {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, 224px);
-  justify-content: center;
-  width: 61.06%;
-  margin: 0 auto;
+
+.form__type-checkbox-group-container {
+  display: flex;
+  flex-direction: column;
+
+  @media all and (min-width: $tablet) {
+    width: 480px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 224px);
+    justify-content: center;
+  }
+
+  @media all and (min-width: $desktop) {
+    width: 871px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+.form__type-checkbox-group-container .form__item-wrapper {
+
+  @media all and (min-width: $desktop) {
+    margin-right: 64px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
 }
 
 .form__type-checkbox-group .form__label {
@@ -112,10 +177,6 @@
   display: flex;
   align-items: center;
   margin-bottom: 16px;
-
-  @media all and (min-width: $tablet) {
-    // margin-right: 49px;
-  }
 }
 
 .form__icon-wrapper {
@@ -127,9 +188,20 @@
   align-items: center;
 }
 
-.form__type-area {
+.form__type-area-container {
   text-align: center;
   padding-bottom: 0;
+
+  @media all and (min-width: $tablet) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+  }
+
+  @media all and (min-width: $desktop) {
+    width: 768px;
+    margin: 0 auto;
+  }
 }
 
 .form__textarea {
@@ -150,6 +222,10 @@
     font-size: $font-size-m;
     line-height: 26px;
     color: $transparent-black;
+  }
+
+  @media all and (min-width: $tablet) {
+    grid-column: 1 / -1;
   }
 }
 
