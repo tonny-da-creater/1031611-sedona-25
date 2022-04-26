@@ -1,13 +1,13 @@
 .video-presentation-section {
   background-color: $white;
+}
 
-  &--wrapper {
-    text-align: center;
-    padding: 17px 20px 0;
+.video-presentation-section--wrapper {
+  text-align: center;
+  padding: 17px 20px 0;
 
-    @media all and (min-width: $tablet){
-      padding: 57px 60px 40px;
-    }
+  @media all and (min-width: $tablet) {
+    padding: 57px 60px 40px;
   }
 }
 
@@ -23,7 +23,7 @@
 
 .video-presentation-section__description {
   margin: 0 auto 38px;
-  width: 96.625%;
+  width: 96.63%;
   max-width: 445px;
 
   @media all and (min-width: $tablet) {
