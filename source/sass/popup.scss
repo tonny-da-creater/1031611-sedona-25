@@ -2,6 +2,8 @@
   box-sizing: border-box;
   padding-top: 45px;
   text-align: center;
+  background-color: red;
+  margin-bottom: 15px;
 
   &--error {
     width: 320px;
@@ -17,26 +19,14 @@
   }
 }
 
-.popup--error .description {
-  margin-bottom: 28px;
-}
-
-.popup--sent .description {
-  margin-bottom: 43px;
-}
-
-.popup--error .button {
-  width: 180px;
-}
-
-.popup--sent .button {
-  width: 280px;
-}
-
 .popup__title {
   display: block;
   margin-bottom: 24px;
   font-size: $font-size-m;
+
+  @media all and (min-width: $tablet) {
+    font-size: 30px;
+  }
 }
 
 .popup__description {
@@ -51,4 +41,65 @@
 .popup__footer {
   background: $pale-grey;
   padding: 20px;
+
+  @media all and (min-width: $tablet) {
+    padding: 44px;
+  }
+}
+
+.popup--error {
+
+  @media all and (min-width: $tablet) {
+    width: 400px;
+    height: 347px;
+    padding-top: 54px;
+  }
+}
+
+.popup--error .popup__title {
+
+  @media all and (min-width: $tablet) {
+    margin-left: auto;
+    margin-right: auto;
+    width: 250px;
+    line-height: 40px;
+  }
+}
+
+.popup--error .description {
+  margin-bottom: 28px;
+
+  @media all and (min-width: $tablet) {
+    width: 307px;
+    margin-bottom: 40px;
+  }
+}
+
+.popup--error .button {
+  width: 180px;
+
+  @media all and (min-width: $tablet) {
+    width: 272px;
+  }
+}
+
+.popup--sent {
+
+  @media all and (min-width: $tablet) {
+    width: 640px;
+    height: 347px;
+    padding-top: 52px;
+  }
+}
+
+.popup--sent .description {
+  margin-bottom: 43px;
+
+  @media all and (min-width: $tablet) {
+    width: 412px;
+  }
+}
+
+.popup--sent .button {
+  width: 280px;
 }
