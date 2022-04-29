@@ -186,6 +186,20 @@
   }
 }
 
+.form__item-wrapper-column {
+  display: grid;
+  grid-template-rows: auto auto;
+  grid-template-columns: calc(100% - 58px) 58px;
+
+  @media all and (min-width: $tablet) {
+    margin-left: 18px;
+  }
+
+  @media all and (min-width: $desktop) {
+    margin-left: 0;
+  }
+}
+
 .form__type-text-group:nth-child(2) .form__input {
   grid-column: 1;
 }
