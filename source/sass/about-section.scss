@@ -21,4 +21,9 @@
 .about__description {
   font-weight: $font-weight-normal;
   color: $light-black;
+
+  &--fix-width {
+    max-width: 446px;
+    margin: 0 auto;
+  }
 }
