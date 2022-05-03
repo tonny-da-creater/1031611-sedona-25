@@ -45,16 +45,19 @@
   }
 }
 
-.gallery-list__link-img {
-  margin-bottom: 15px;
-
-  @media all and (min-width: $tablet) {
-    margin-bottom: 0;
-  }
-
-  @media all and (min-width: $desktop) {
+@media all and (min-width: $desktop) {
+  .gallery-list__link-img {
     grid-row: 1;
     grid-column: 1 / span 2;
+  }
+}
+
+.gallery-list__link-img + .gallery-list__item-footer,
+.gallery-list__item-footer + .gallery-list__link-img {
+  margin-top: 15px;
+
+  @media all and (min-width: $tablet) {
+    margin-top: 0;
   }
 }
 
@@ -145,6 +148,11 @@
 .gallery-list__author + .gallery-list__like-block,
 .gallery-list__description + .gallery-list__like-block {
   margin-top: 11px;
+
+  @media all and (min-width: $tablet) {
+    margin-bottom: 11px;
+    margin-top: 0;
+  }
 }
 
 .gallery-list__like-block + .gallery-list__description {

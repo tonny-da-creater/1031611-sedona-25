@@ -1,20 +1,15 @@
 .popup {
   box-sizing: border-box;
-  padding-top: 45px;
   text-align: center;
-  margin-bottom: 15px;
 
   &--error {
     width: 320px;
-    height: 280px;
+    padding: 45px 0 35px 0;
   }
 
   &--sent {
     width: 320px;
-    height: 323px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    padding-top: 39px;
   }
 }
 
@@ -49,8 +44,7 @@
 @media all and (min-width: $tablet) {
   .popup--error {
     width: 400px;
-    height: 347px;
-    padding-top: 54px;
+    padding: 50px 0 49px 0;
   }
 }
 
@@ -83,10 +77,13 @@
 @media all and (min-width: $tablet) {
   .popup--sent {
     width: 640px;
-    height: 347px;
-    padding-top: 52px;
+    padding-top: 63px;
   }
 }
+
+// .popup--sent  .popup__title {
+//   margin-top: 39px;
+// }
 
 .popup--sent .description {
   margin-bottom: 43px;

@@ -1,9 +1,7 @@
 .form {
-  padding-top: 24px;
   background-color: $white;
   display: grid;
   grid-template-columns: 1fr;
-  border-top: 1px solid $very-light-grey;
 
   @media all and (min-width: $tablet) {
     display: grid;
@@ -13,11 +11,6 @@
     border-top: none;
     margin: 0 auto;
   }
-}
-
-.form__item-wrapper {
-  display: flex;
-  align-items: center;
 }
 
 .form__title {
@@ -71,48 +64,80 @@
 
 .form__type-radio-group,
 .form__type-checkbox-group,
-.form__type-area {
+.form__full-name-block,
+.form__contacts-block {
   border-top: 1px solid $very-light-grey;
 }
 
 @media all and (min-width: $tablet) {
-  .form__type-text-group {
+.form__full-name-block,
+.form__contacts-block {
     border-top: none;
   }
 }
 
-.form__type-text-group:first-child {
+.form__full-name-block {
   padding-bottom: 39px;
+  padding-top: 24px;
 
   @media all and (min-width: $tablet) {
     padding-bottom: 15px;
+    padding-top: 0;
   }
 }
 
 @media all and (min-width: $tablet) {
-  .form__type-text-group:first-child .form__title {
+  .form__full-name-block .form__title {
     text-align: right;
     margin-right: 39px;
   }
 }
 
 @media all and (min-width: $desktop) {
-  .form__type-text-group:first-child .form__title {
+  .form__full-name-block .form__title {
     margin-right: 103px;
   }
 }
 
-.form__type-text-group:nth-child(2) {
+.form__full-name-block .form__item-wrapper {
+  margin-bottom: 16px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.form__full-name-block .form__input {
+  padding-left: 16px;
+  height: 58px;
+}
+
+@media all and (min-width: $tablet) {
+  .form__full-name-block {
+    padding-right: 43px;
+    border-right: 1px solid #dbdbdb;
+  }
+}
+
+@media all and (min-width: $desktop) {
+  .form__full-name-block {
+    padding-right: 63px;
+  }
+}
+
+.form__contacts-block {
   border-top: 1px solid $very-light-grey;
   padding: 24px 0 34px 0;
 
   @media all and (min-width: $tablet) {
     border-top: 0;
     padding: 0;
+    overflow: auto;
   }
 }
 
-.form__type-text-group-container {
+.form__full-name-block-container,
+.form__contacts-block-container {
   width: 87.5%;
   margin: 0 auto;
 
@@ -122,60 +147,38 @@
   }
 }
 
-.form__type-text-group-container .form__item-wrapper {
-  margin-bottom: 16px;
-
-  &:last-child {
-    margin-bottom: 0;
-  }
-}
-
-.form__type-text-group .form__input {
-  padding-left: 16px;
-  height: 58px;
-}
-
 @media all and (min-width: $tablet) {
-  .form__type-text-group:first-child {
-    padding-right: 43px;
-    border-right: 1px solid #dbdbdb;
-  }
-}
-
-@media all and (min-width: $desktop) {
-  .form__type-text-group:first-child {
-    padding-right: 63px;
-  }
-}
-
-@media all and (min-width: $tablet) {
-  .form__type-text-group:nth-child(2) {
+  .form__contacts-block {
     padding-left: 26px;
   }
 }
 
 @media all and (min-width: $desktop) {
-  .form__type-text-group:nth-child(2) {
+  .form__contacts-block {
     padding-left: 64px;
   }
 }
 
 @media all and (min-width: $tablet) {
-  .form__type-text-group:nth-child(2) .form__title {
+  .form__contacts-block .form__title {
     text-align: left;
   }
 }
 
 @media all and (min-width: $desktop) {
-  .form__type-text-group:nth-child(2) .form__title {
+  .form__contacts-block .form__title {
     margin-left: 30px;
   }
 }
 
-.form__type-text-group:nth-child(2) .form__item-wrapper {
+.form__contacts-block .form__item-wrapper {
   display: grid;
-  grid-template-rows: auto auto;
   grid-template-columns: calc(100% - 58px) 58px;
+  margin-bottom: 16px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
 
   @media all and (min-width: $tablet) {
     margin-left: 18px;
@@ -186,22 +189,9 @@
   }
 }
 
-.form__item-wrapper-column {
-  display: grid;
-  grid-template-rows: auto auto;
-  grid-template-columns: calc(100% - 58px) 58px;
-
-  @media all and (min-width: $tablet) {
-    margin-left: 18px;
-  }
-
-  @media all and (min-width: $desktop) {
-    margin-left: 0;
-  }
-}
-
-.form__type-text-group:nth-child(2) .form__input {
+.form__contacts-block .form__input {
   grid-column: 1;
+  padding-left: 16px;
 }
 
 @media all and (min-width: $tablet) {
@@ -211,7 +201,8 @@
   }
 }
 
-.form__type-text-group .form__label {
+.form__full-name-block .form__label,
+.form__contacts-block .form__label {
   font-weight: $font-weight-normal;
   font-size: $font-size-s;
   line-height: 21px;
@@ -221,6 +212,12 @@
 
 .form__type-radio-group {
   padding: 24px 0;
+}
+
+.form__type-radio-group .form__item-wrapper,
+.form__type-checkbox-group .form__item-wrapper {
+  display: flex;
+  align-items: center;
 }
 
 .form__type-radio-group-container {
@@ -279,7 +276,7 @@
   color: $black;
 }
 
-.form__type-text-group-container .form__input {
+.form__full-name-block .form__input {
   width: 100%;
 }
 
