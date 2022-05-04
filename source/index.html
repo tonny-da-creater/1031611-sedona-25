@@ -14,7 +14,7 @@
         <img class="logo" src="img/logo.svg" width="185" height="96" alt="логотип Sedona">
       </a>
     </div>
-    <nav class="main-nav main-nav--wrapper">
+    <nav class="main-nav main-nav--opened main-nav--wrapper main-nav--nojs">
       <ul class="main-nav__list site-list">
         <li class="main-nav__item site-list__item">
           <a class="main-nav__link site-list__link" href="index.html">Главная</a>
@@ -46,8 +46,10 @@
     <section class="attractions">
       <div class="attractions__item attraction attraction--primary-color attraction--text-color-light">
         <h3 class="attraction__title title">НАСТОЯЩИЙ ГОРОДОК</h3>
-        <span class="attraction__num">№1</span>
-        <p class="attraction__description description">СЕДОНА НЕ АТТРАКЦИОН ДЛЯ ТУРИСТОВ, ТАМ ТЕЧЕТ СВОЯ ЖИЗНЬ</p>
+        <div class="attraction__decor-wrapper">
+          <span class="attraction__num">№1</span>
+        </div>
+          <p class="attraction__description description">СЕДОНА НЕ АТТРАКЦИОН ДЛЯ ТУРИСТОВ, ТАМ ТЕЧЕТ СВОЯ ЖИЗНЬ</p>
       </div>
       <img class="attractions__img" src="img/sedona-house.jpg" width="520" height="260" alt="Дом в Седоне">
     </section>
@@ -146,5 +148,6 @@
       </a>
     </div>
   </footer>
+  <script src="js/script.js"></script>
 </body>
 </html>

@@ -39,4 +39,31 @@
   line-height: 21px;
   margin-bottom: 17px;
   display: block;
+  position: relative;
+  min-width: 48px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 8px;
+    height: 1px;
+    background-color: $white;
+    top: 50%;
+    left: 0;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 8px;
+    height: 1px;
+    background-color: $white;
+    top: 50%;
+    right: 0;
+  }
+}
+
+.attractions__wrapper .attraction__num::before,
+.attractions__wrapper .attraction__num::after {
+  background-color: $light-black;
 }
