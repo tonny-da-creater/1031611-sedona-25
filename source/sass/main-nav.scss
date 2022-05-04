@@ -26,6 +26,10 @@
       content: none;
     }
   }
+
+  @media all and (min-width: $tablet) {
+    position: static;
+  }
 }
 
 .main-nav__toggle {
@@ -83,6 +87,6 @@
   display: none;
 }
 
-.main-nav--nojs.main-nav {
+.main-nav--nojs.main-nav--wrapper {
   position: static;
 }

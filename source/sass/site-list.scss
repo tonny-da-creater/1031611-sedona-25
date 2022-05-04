@@ -59,3 +59,17 @@
     color: $black;
   }
 }
+
+@media all and (min-width: $tablet) {
+  .site-list__link--current {
+    color: $brown;
+  }
+
+  .site-list__link:hover {
+    color: $light-blue;
+  }
+
+  .site-list__link:active {
+    color: $active-color;
+  }
+}

@@ -1,9 +1,28 @@
 .entry-section {
   background: url("../img/entry-section-background.jpg") no-repeat center /cover;
   background-color: $black;
+}
 
-  &--wrapper {
-    text-align: center;
+.entry-section--wrapper {
+  text-align: center;
+  clip-path: polygon(50% 100%, 100% 93.32%, 100% 0, 0 0, 0 93.32%);
+}
+
+@media all and (min-width: $tablet) {
+  .entry-section--wrapper {
+    clip-path: none;
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 50%;
+      left: 0;
+      bottom: 0;
+      height: 57px;
+      background-color: $white;
+      clip-path: polygon(15% 61%, 15% 1%, 100% 100%, 0 99%, 0 49%);
+    }
   }
 }
 
