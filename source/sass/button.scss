@@ -19,7 +19,7 @@
 
 .button:active {
   background-color: $primary-down-color;
-  color: rgba(255, 255, 255, 0.3);
+  color: $down-grey-transparent;
 }
 
 .button--disabled {

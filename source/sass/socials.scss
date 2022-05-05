@@ -23,7 +23,10 @@
 
 .socials__item:active {
   background-color: $primary-down-color;
-  color: rgba(255, 255, 255, 0.3);
+}
+
+.socials__item:active path {
+  fill: $down-grey-transparent;
 }
 
 .socials__link {

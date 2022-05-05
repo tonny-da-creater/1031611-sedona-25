@@ -1,18 +1,14 @@
-.main-header {
-  background-color: $white;
-  // height: 56px;
-
-  &--wrapper {
-    position: relative;
-  }
+.main-header--wrapper {
+  position: relative;
 }
 
 .main-header__logo-wrapper {
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
+  z-index: 1;
 
-  @media all and (min-width: $tablet) {
-    z-index: 1;
-  }
+  // @media all and (min-width: $tablet) {
+  //   z-index: 1;
+  // }
 }
