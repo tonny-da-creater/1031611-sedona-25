@@ -26,7 +26,7 @@
     bottom: 0;
     width: 100%;
     height: 7px;
-    background: linear-gradient(180deg, $black 0%, $opacity-black 100%);
+    background: linear-gradient(180deg, $full-transparent-black 0%, $opacity-black 100%);
 
     @media all and (min-width: $tablet) {
       content: none;
