@@ -41,14 +41,45 @@
 
 .site-list__item:hover {
   background-color: $primary-hover-color;
+
+  @media all and (min-width: $tablet) {
+    background-color: transparent;
+  }
+}
+
+@media all and (min-width: $tablet) {
+  .site-list__item:hover .site-list__link {
+    color: $light-blue;
+  }
 }
 
 .site-list__item:active {
   background-color: $primary-down-color;
+
+  @media all and (min-width: $tablet) {
+    background-color: transparent;
+  }
 }
 
 .site-list__item:active .site-list__link {
   color: $white-opacity;
+  background-color: $active-color;
+
+  @media all and (min-width: $tablet) {
+    background-color: transparent;
+  }
+}
+
+@media all and (min-width: $tablet) {
+  .site-list__item:active .site-list__link {
+    color: $active-color;
+  }
+}
+
+@media all and (min-width: $tablet) {
+  .site-list__item--current .site-list__link {
+    color: $brown;
+  }
 }
 
 @media all and (min-width: $tablet) {
@@ -56,7 +87,6 @@
     margin-right: 19.92%;
   }
 }
-
 
 .site-list__link {
   color: $white;
@@ -69,20 +99,6 @@
 
   @media all and (min-width: $tablet) {
     color: $black;
-    padding: 18px 0 17px 0;
-  }
-}
-
-@media all and (min-width: $tablet) {
-  .site-list__link--current {
-    color: $brown;
-  }
-
-  .site-list__link:hover {
-    color: $light-blue;
-  }
-
-  .site-list__link:active {
-    color: $active-color;
+    padding: 0;
   }
 }
