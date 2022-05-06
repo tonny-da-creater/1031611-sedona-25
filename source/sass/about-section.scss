@@ -1,10 +1,10 @@
 .about {
   background-color: $white;
+}
 
-  &--wrapper {
-    padding: 32px 24px 52px 24px;
-    text-align: center;
-  }
+.about--wrapper {
+  padding: 32px 24px 52px 24px;
+  text-align: center;
 }
 
 .about__title {

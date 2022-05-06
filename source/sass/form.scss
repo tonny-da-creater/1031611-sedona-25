@@ -70,8 +70,8 @@
 }
 
 @media all and (min-width: $tablet) {
-.form__full-name-block,
-.form__contacts-block {
+  .form__full-name-block,
+  .form__contacts-block {
     border-top: none;
   }
 }
@@ -110,6 +110,7 @@
 .form__full-name-block .form__input {
   padding-left: 16px;
   height: 58px;
+  width: 100%;
 }
 
 @media all and (min-width: $tablet) {
@@ -274,10 +275,6 @@
   font-size: $font-size-m;
   line-height: 26px;
   color: $black;
-}
-
-.form__full-name-block .form__input {
-  width: 100%;
 }
 
 .form__type-area {

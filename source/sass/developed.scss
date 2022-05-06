@@ -3,13 +3,37 @@
   font-weight: $font-weight-normal;
   font-size: $font-size-s;
   line-height: 21px;
+  display: flex;
+  align-items: center;
+  color: $black;
+
+  &:hover {
+    color: $primary-color;
+  }
+
+  &:active {
+    color: $link-developed-down-color;
+  }
 }
 
 .developed__description {
-  vertical-align: middle;
-  color: $black;
+  margin-right: 13px;
+  text-transform: uppercase;
 }
 
 .developed__img {
-  vertical-align: middle;
+  width: 24px;
+  height: 29px;
+}
+
+.developed__img path {
+  fill: $black;
+}
+
+.developed:hover path {
+  fill: $primary-color;
+}
+
+.developed:active path {
+  fill: $link-developed-down-color;
 }

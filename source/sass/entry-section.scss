@@ -1,9 +1,54 @@
 .entry-section {
   background: url("../img/entry-section-background.jpg") no-repeat center /cover;
   background-color: $black;
+}
 
-  &--wrapper {
-    text-align: center;
+.entry-section--wrapper {
+  text-align: center;
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 50%;
+    left: 0;
+    bottom: -1px;
+    height: 26px;
+    background-color: $white;
+    clip-path: polygon(0 0, 0 100%, 100% 100%);
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 50%;
+    right: 0;
+    bottom: -1px;
+    height: 26px;
+    background-color: $white;
+    clip-path: polygon(0 100%, 100% 100%, 100% 0);
+  }
+}
+
+@media all and (min-width: $tablet) {
+  .entry-section--wrapper::before {
+    height: 57px;
+    clip-path: polygon(8.85% 46%, 8.85% 0, 100% 100%, 0 100%, 0 36%);
+  }
+
+  .entry-section--wrapper::after {
+    height: 57px;
+    clip-path: polygon(91.15% 46%, 91.15% 0, 0 100%, 100% 100%, 100% 36%);
+  }
+}
+
+@media all and (min-width: $desktop) {
+  .entry-section--wrapper::before {
+    clip-path: polygon(41.7% 46%, 41.7% 0, 100% 100%, 0 100%, 0 10%);
+  }
+
+  .entry-section--wrapper::after {
+    clip-path: polygon(58.3% 46%, 58.3% 0, 0 100%, 100% 100%, 100% 10%);
   }
 }
 

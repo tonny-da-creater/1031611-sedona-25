@@ -1,18 +1,35 @@
 $font-family: "PT sans", sans-serif;
+
+
 $primary-color: #81b3d2;
+$primary-hover-color: #669ec0;
+$primary-down-color: #5496bd;
+$primary-hover-second-color: rgba(129, 179, 210, 0.6);
+$primary-down-second-color: rgba(129, 179, 210, 0.3);
 $white: #ffffff;
+$white-opacity: rgba(255, 255, 255, 0.3);
+$white-more-opacity: rgba(255, 255, 255, 0.6);
 $pale-grey: #f2f2f2;
 $black: #000000;
+$opacity-black: rgba(0, 0, 0, 0.2);
+$full-transparent-black: rgba(0, 0, 0, 0);
 $light-black: #333333;
 $light-grey: #eeeeee;
 $very-light-grey: #e5e5e5;
+$link-developed-down-color: #b3b3b3;
+$down-grey-transparent: rgba(255, 255, 255, 0.3);
 $secondary-light-grey: #e6e6e6;
 $grey: #d6d6d6;
 $darkgrey: #eaeaea;
+$brown: #766357;
+$light-blue: #81b3d2;
+$active-color: rgba(0, 0, 0, 0.3);
 $black-shadow: rgba(1, 1, 1, 0.2);
 $grey-shadow: rgba(255, 255, 255, 0.2);
 $transparent-black: rgba(0, 0, 0, 0.3);
 $secondary-transpatent-black: rgba(51, 51, 51, 0.6);
+
+
 $font-size-xs: 12px;
 $font-size-s: 14px;
 $font-size-m: 18px;

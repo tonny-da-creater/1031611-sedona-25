@@ -10,4 +10,18 @@
   border: none;
   background-color: $primary-color;
   color: $white;
+  cursor: pointer;
+
+  &:hover {
+    background-color: $primary-hover-color;
+  }
+}
+
+.button:active {
+  background-color: $primary-down-color;
+  color: $down-grey-transparent;
+}
+
+.button--disabled {
+  background: $very-light-grey;
 }

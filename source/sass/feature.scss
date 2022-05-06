@@ -8,6 +8,7 @@
 
   @media all and (min-width: $tablet) {
     grid-template-columns: 1fr;
+    grid-template-rows: 80px min-content auto;
     text-align: center;
     justify-self: center;
     width: auto;

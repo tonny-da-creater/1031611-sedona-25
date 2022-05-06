@@ -14,7 +14,7 @@
         <img class="logo" src="img/logo.svg" width="185" height="96" alt="логотип Sedona">
       </a>
     </div>
-    <nav class="main-nav main-nav--wrapper">
+    <nav class="main-nav main-nav--opened main-nav--wrapper">
       <ul class="main-nav__list site-list">
         <li class="main-nav__item site-list__item">
           <a class="main-nav__link site-list__link" href="index.html">Главная</a>
@@ -22,7 +22,7 @@
         <li class="main-nav__item site-list__item">
           <a class="main-nav__link site-list__link" href="photos-and-videos.html">Фото и видео</a>
         </li>
-        <li class="main-nav__item site-list__item">
+        <li class="main-nav__item site-list__item site-list__item--current">
           <a class="main-nav__link site-list__link" href="form-review.html">Форма Отзыва</a>
         </li>
         <li class="main-nav__item site-list__item">
@@ -127,18 +127,32 @@
       <a class="main-footer__title title" href="#">#VISITSEDONA</a>
         <ul class="main-footer__socials socials">
           <li class="socials__item">
-            <a class="socials__link" href="#"><img src="img/vk.svg" alt="Вконтакте"></a>
+            <a class="socials__link" href="#">
+              <svg width="24" height="14" viewBox="0 0 24 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M23.45 0.948C23.616 0.402 23.45 0 22.655 0H20.03C19.362 0 19.054 0.347 18.887 0.73C18.887 0.73 17.552 3.926 15.661 6.002C15.049 6.604 14.771 6.795 14.437 6.795C14.27 6.795 14.019 6.604 14.019 6.057V0.948C14.019 0.292 13.835 0 13.279 0H9.151C8.734 0 8.483 0.304 8.483 0.593C8.483 1.214 9.429 1.358 9.526 3.106V6.904C9.526 7.737 9.373 7.888 9.039 7.888C8.149 7.888 5.984 4.677 4.699 1.003C4.45 0.288 4.198 0 3.527 0H0.9C0.15 0 0 0.347 0 0.73C0 1.412 0.89 4.8 4.145 9.281C6.315 12.341 9.37 14 12.153 14C13.822 14 14.028 13.632 14.028 12.997V10.684C14.028 9.947 14.186 9.8 14.715 9.8C15.105 9.8 15.772 9.992 17.33 11.467C19.11 13.216 19.403 14 20.405 14H23.03C23.78 14 24.156 13.632 23.94 12.904C23.702 12.18 22.852 11.129 21.725 9.882C21.113 9.172 20.195 8.407 19.916 8.024C19.527 7.533 19.638 7.314 19.916 6.877C19.916 6.877 23.116 2.451 23.449 0.948H23.45Z" fill="white"/>
+              </svg>
+            </a>
           </li>
           <li class="socials__item">
-            <a class="socials__link" href="#"><img src="img/telegram.svg" alt="Telegram"></a>
+            <a class="socials__link" href="#">
+              <svg width="22" height="18" viewBox="0 0 22 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M21.4393 1.62225L18.2705 16.566C18.0313 17.6205 17.408 17.883 16.5223 17.3865L11.6938 13.8285L9.36425 16.0695C9.10626 16.3275 8.891 16.5428 8.39375 16.5428L8.741 11.6258L17.6893 3.54C18.0785 3.1935 17.6045 3.00075 17.0848 3.348L6.02225 10.314L1.25976 8.823C0.224006 8.49975 0.205256 7.78725 1.47576 7.29L20.1035 0.113253C20.966 -0.209997 21.7205 0.305253 21.4393 1.623V1.62225Z" fill="white"/>
+              </svg>
+            </a>
           </li>
           <li class="socials__item">
-            <a class="socials__link" href="#"><img src="img/youtube.svg" alt="Youtube"></a>
+            <a class="socials__link" href="#">
+              <svg width="20" height="14" viewBox="0 0 20 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M17.1813 0H2.81331C1.30618 0 0 1.3 0 2.8V11.1C0 12.7 1.30618 14 2.81331 14H17.1813C18.7889 14 19.9946 12.7 19.9946 11.2V2.8C20.095 1.3 18.7889 0 17.1813 0ZM7.03326 10.4V3.6L13.8656 7L7.03326 10.4Z" fill="white"/>
+              </svg>
+            </a>
           </li>
         </ul>
       <a class="main-footer__link developed" href="#">
         <span class="developed__description">Разработано</span>
-        <img class="developed__img" width="27" height="34" src="img/htmlacademy.svg" alt="htmlacademy">
+        <svg class="developed__img" width="24" height="29" viewBox="0 0 24 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M12.1338 0H12.0446L0 1.19062V22.1965L12.0446 29L24 22.1965V1.19062L12.1338 0ZM22.3048 10.2903L12.0446 4.50733V4.42229H11.9554L11.8662 4.33724V4.42229L1.69517 10.2903V2.63636L11.9554 1.61584L22.3048 2.63636V10.2903ZM11.9554 5.78299L22.2156 11.4809L18.2007 13.6921L11.8662 10.1202V11.3109L17.1301 14.2874L16.3271 14.7126L11.8662 12.1613V13.3519L15.2565 15.3079L14.5428 15.7331L11.8662 14.2023V15.393L13.5613 16.3284L11.9554 17.2639L1.78439 11.566L11.9554 5.78299ZM1.69517 12.8416L11.8662 18.6246V19.4751L4.81784 15.478V16.6686L11.9554 20.7507V21.6862L4.81784 17.6891V18.8798L11.9554 22.9619L19.1822 18.7947V14.3724L22.2156 12.6716V21.176L11.9554 27.044L1.69517 21.261V12.8416Z" fill="#81B3D2"/>
+        </svg>
       </a>
     </div>
   </footer>

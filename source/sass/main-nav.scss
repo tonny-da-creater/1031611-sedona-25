@@ -1,10 +1,37 @@
 .main-nav {
   width: 100%;
+  background-color: $white;
+  min-height: 56px;
 }
 
 .main-nav--wrapper {
-  // position: absolute;
+  position: relative;
   top: 0;
+
+  @media all and (min-width: $tablet) {
+    position: static;
+    display: flex;
+    align-items: center;
+  }
+}
+
+.main-nav__list {
+  position: absolute;
+  width: 100%;
+  z-index: 2;
+
+  &::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 7px;
+    background: linear-gradient(180deg, $full-transparent-black 0%, $opacity-black 100%);
+
+    @media all and (min-width: $tablet) {
+      content: none;
+    }
+  }
 
   @media all and (min-width: $tablet) {
     position: static;
@@ -13,13 +40,79 @@
 
 .main-nav__toggle {
   position: absolute;
-  z-index: 1;
-  top: 0;
-  right: 0;
-  margin-right: 20px;
-  margin-top: 17px;
+  z-index: 2;
+  top: 17px;
+  right: 20px;
+  background-color: transparent;
+  border: 0;
+  height: 22px;
+  width: 22.9px;
+  cursor: pointer;
 
   @media all and (min-width: $tablet) {
     display: none;
   }
+}
+
+.main-nav--closed + .main-nav__toggle::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background-color: $primary-color;
+  box-shadow: 0 9px 0 0 $primary-color, 0 18px 0 0 $primary-color;
+
+  &:hover {
+    background-color: $primary-hover-second-color;
+    box-shadow: 0 9px 0 0 $primary-hover-second-color, 0 18px 0 0 $primary-hover-second-color;
+  }
+
+  &:active {
+    background-color: $primary-down-second-color;
+    box-shadow: 0 9px 0 0 $primary-down-second-color, 0 18px 0 0 $primary-down-second-color;
+  }
+}
+
+.main-nav--opened + .main-nav__toggle {
+  width: 28px;
+  height: 28px;
+}
+
+.main-nav--opened + .main-nav__toggle::before,
+.main-nav--opened + .main-nav__toggle::after {
+  content: "";
+  position: absolute;
+  top: 9px;
+  left: 0;
+  background-color: $white;
+  width: 100%;
+  height: 4px;
+}
+
+.main-nav--opened + .main-nav__toggle:hover::before,
+.main-nav--opened + .main-nav__toggle:hover::after {
+  background-color: $white-more-opacity;
+}
+
+.main-nav--opened + .main-nav__toggle:active::before,
+.main-nav--opened + .main-nav__toggle:active::after {
+  background-color: $white-opacity;
+}
+
+.main-nav--opened + .main-nav__toggle::before {
+  transform: rotate(45deg);
+}
+
+.main-nav--opened + .main-nav__toggle::after {
+  transform: rotate(-45deg);
+}
+
+.main-nav--nojs + .main-nav__toggle {
+  display: none;
+}
+
+.main-nav--nojs .main-nav__list {
+  position: relative;
 }
