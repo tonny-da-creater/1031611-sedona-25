@@ -1,10 +1,14 @@
 <!DOCTYPE html>
-<html class="page" lang="en">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="favicon.ico">
+  <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="img/apple.png">
+  <link rel="manifest" href="manifest.webmanifest">
   <title>Фото и видео</title>
 </head>
 <body>
@@ -38,7 +42,7 @@
     <h1 class="visually-hidden">Галерея</h1>
     <section class="entry-section entry-section--wrapper entry-section--wrapper-inner-page">
       <h2 class="visually-hidden">Седона</h2>
-      <img class="entry-img entry-img--small" src="img/SEDONA.svg" alt="Седона">
+      <img class="entry-section__img-short" width="229" height="39" src="img/sedona.svg" alt="Седона">
     </section>
     <section class="about about--wrapper">
       <h2 class="about__title title">фото и видео</h2>
@@ -47,7 +51,11 @@
     <ul class="gallery-section gallery-list gallery-section--wrapper">
       <li class="gallery-list__item">
         <a class="gallery-list__link-img" href="#">
-          <img class="gallery-list__img" width="280" height="280" src="img/gallery-sedona-road.jpg" alt="дорога Седоны">
+          <picture>
+            <source media="(min-width: 1200px)" srcset="img/gallery-sedona-road-desktop.jpg, img/gallery-sedona-road-desktop@2x.jpg">
+            <source media="(min-width: 768px)" srcset="img/gallery-sedona-road-tablet.jpg, img/gallery-sedona-road-tablet@2x.jpg">
+            <img class="gallery-list__img" width="280" height="280" src="img/gallery-sedona-road-mobile.jpg" srcset="img/gallery-sedona-road-mobile@2x.jpg" alt="дорога Седоны">
+          </picture>
         </a>
         <div class="gallery-list__item-footer">
           <b class="gallery-list__description">неродные просторы</b>
@@ -62,7 +70,11 @@
       </li>
       <li class="gallery-list__item">
         <a class="gallery-list__link-img" href="#">
-          <img class="gallery-list__img" width="280" height="280" src="img/gallery-vegetation.jpg" alt="Растительность Седоны">
+          <picture>
+            <source media="(min-width: 1200px)" srcset="img/gallery-vegetation-desktop.jpg, gallery-vegetation-desktop@2x.jpg">
+            <source media="(min-width: 768px)" srcset="img/gallery-vegetation-tablet.jpg, gallery-vegetation-tablet@2x.jpg">
+            <img class="gallery-list__img" width="280" height="280" src="img/gallery-vegetation-mobile.jpg" srcset="img/gallery-vegetation-mobile@2x.jpg" alt="Растительность Седоны">
+          </picture>
         </a>
         <div class="gallery-list__item-footer">
           <b class="gallery-list__description">Местная растительность</b>
@@ -77,7 +89,11 @@
       </li>
       <li class="gallery-list__item">
         <a class="gallery-list__link-img" href="#">
-          <img class="gallery-list__img" width="280" height="280" src="img/gallery-road-to-the-north.jpg" alt="Дорога на север">
+          <picture>
+            <source media="(min-width: 1200px)" srcset="img/gallery-road-to-the-north-desktop.jpg, img/gallery-road-to-the-north-desktop@2x.jpg">
+            <source media="(min-width: 768px)" srcset="img/gallery-road-to-the-north-tablet.jpg, img/gallery-road-to-the-north-tablet@2x.jpg">
+            <img class="gallery-list__img" width="280" height="280" src="img/gallery-road-to-the-north-mobile.jpg" srcset="img/gallery-road-to-the-north-mobile@2x.jpg" alt="Дорога на север">
+          </picture>
         </a>
         <div class="gallery-list__item-footer">
           <b class="gallery-list__description">Дорога на север</b>
@@ -92,7 +108,11 @@
       </li>
       <li class="gallery-list__item">
         <a class="gallery-list__link-img" href="#">
-          <img class="gallery-list__img" width="280" height="280" src="img/gallery-devils-bridge.jpg" alt="Мост Дьявола в Седоне">
+          <picture>
+            <source media="(min-width: 1200px)" srcset="img/gallery-devils-bridge-desktop.jpg, img/gallery-devils-bridge-desktop@2x">
+            <source media="(min-width: 768px)" srcset="img/gallery-devils-bridge-tablet.jpg, img/gallery-devils-bridge-tablet@2x">
+           <img class="gallery-list__img" width="280" height="280" src="img/gallery-devils-bridge-mobile.jpg" srcset="img/gallery-devils-bridge-mobile@2x.jpg" alt="Мост Дьявола в Седоне">
+          </picture>
         </a>
         <div class="gallery-list__item-footer">
           <b class="gallery-list__description">Мост дьявола</b>
@@ -110,7 +130,11 @@
       <h3 class="visually-hidden">Видео о Седоне</h3>
       <b class="video-presentation-section__title title">Все еще сомневаетесь?</b>
       <p class="video-presentation-section__description description">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
-      <img class="video-presentation-section__video-preview" width="280" height="177" src="img/video-preview.jpg" alt="превью видео">
+      <picture>
+        <source media="(min-width: 1200px)" srcset="img/video-preview-desktop.jpg, img/video-preview-desktop@2x.jpg">
+        <source media="(min-width: 768px)" srcset="img/video-preview-tablet.jpg, img/video-preview-tablet@2x.jpg">
+        <img class="video-presentation-section__video-preview" width="280" height="177" src="img/video-preview-mobile.jpg" srcset="img/video-preview-mobile@2x.jpg" alt="превью видео">
+      </picture>
     </section>
   </main>
   <footer class="main-footer">
