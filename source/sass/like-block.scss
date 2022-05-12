@@ -4,14 +4,19 @@
 
 .like-block__icon-svg {
   margin-right: 14px;
-}
+  color: $active-color;
 
-.like-block__icon-svg path {
   @media all and (min-width: $desktop) {
-    fill: $white;
-    opacity: 1;
+    color: $white;
   }
 }
+
+// .like-block__icon-svg path {
+//   @media all and (min-width: $desktop) {
+//     fill: $white;
+//     opacity: 1;
+//   }
+// }
 
 .like-block__count {
   font-style: normal;

@@ -24,16 +24,21 @@
 .developed__img {
   width: 24px;
   height: 29px;
+  color: $black;
 }
 
-.developed__img path {
-  fill: $black;
+.developed:hover {
+  color: $primary-color;
 }
 
-.developed:hover path {
-  fill: $primary-color;
+.developed:active {
+  color: $link-developed-down-color;
 }
 
-.developed:active path {
-  fill: $link-developed-down-color;
+.developed:hover .developed__img {
+  color: $primary-color;
+}
+
+.developed:active .developed__img {
+  color: $link-developed-down-color;
 }
