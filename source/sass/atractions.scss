@@ -7,7 +7,7 @@
 }
 
 .attractions__item {
-  padding: 35px 15px;
+  padding: 48px 15px 40px 15px;
 }
 
 .about + .attractions .attractions__item {
@@ -51,12 +51,14 @@
   @media all and (min-width: $tablet) {
     display: flex;
     padding: 42px 0;
+    width: 90%;
   }
 }
 
 .attractions__wrapper .attractions__item {
   border-bottom: 1px solid $grey;
   justify-content: start;
+  padding: 26px 21px 24px 21px;
 
   &:last-child {
     border-bottom: none;
@@ -64,6 +66,7 @@
 
   @media all and (min-width: $tablet) {
     border-bottom: none;
+    padding: 0;
   }
 }
 

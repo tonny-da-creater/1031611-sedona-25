@@ -3,8 +3,12 @@
 }
 
 .about--wrapper {
-  padding: 32px 24px 52px 24px;
+  padding: 32px 24px 38px 24px;
   text-align: center;
+
+  @media all and (min-width: $tablet) {
+    padding: 45px 24px 53px 24px;
+  }
 }
 
 .about__title {

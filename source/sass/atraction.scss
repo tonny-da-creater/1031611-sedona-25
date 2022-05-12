@@ -6,6 +6,14 @@
   }
 }
 
+.attraction__title br {
+  display: none;
+
+  @media all and (min-width: $tablet) {
+    display: block;
+  }
+}
+
 .attraction {
   text-align: center;
   display: flex;

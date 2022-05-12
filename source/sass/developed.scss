@@ -22,17 +22,9 @@
 }
 
 .developed__img {
-  width: 24px;
-  height: 29px;
+  width: 27px;
+  height: 34px;
   color: $black;
-}
-
-.developed:hover {
-  color: $primary-color;
-}
-
-.developed:active {
-  color: $link-developed-down-color;
 }
 
 .developed:hover .developed__img {

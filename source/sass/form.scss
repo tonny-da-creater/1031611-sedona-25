@@ -97,9 +97,11 @@
   margin-left: 16px;
 }
 
-.form__full-name-block .form__input,
 .form__contacts-block .form__input,
-.form__textarea {
+.form__full-name-block .form__input {
+  height: 58px;
+  width: 100%;
+  padding-left: 16px;
   background: $pale-grey;
   border: none;
   box-sizing: border-box;
@@ -123,7 +125,52 @@
 
   &:active {
     background-color: $white;
-    outline: 4px solid $very-light-grey;
+    border: 4px solid $very-light-grey;
+    padding-left: 12px;
+  }
+}
+
+.form__contacts-block .form__input {
+  grid-column: 1;
+}
+
+.form__textarea {
+  background: $pale-grey;
+  width: 100%;
+  padding: 16px;
+  border: none;
+  margin-bottom: 56px;
+  min-height: 160px;
+  color: $black;
+  font-weight: $font-weight-bold;
+  font-size: $font-size-m;
+  line-height: 26px;
+  resize: none;
+
+  &::placeholder {
+    font-family: $font-family;
+    font-weight: $font-weight-bold;
+    font-size: $font-size-m;
+    line-height: 26px;
+    color: $transparent-black;
+  }
+
+  &:hover {
+    background-color: $very-light-grey;
+  }
+
+  &:focus {
+    outline: none;
+  }
+
+  &:active {
+    background-color: $white;
+    border: 4px solid $very-light-grey;
+    padding: 12px;
+  }
+
+  @media all and (min-width: $tablet) {
+    grid-column: 1 / -1;
   }
 }
 
@@ -250,12 +297,6 @@
   }
 }
 
-.form__full-name-block .form__input {
-  padding-left: 16px;
-  height: 58px;
-  width: 100%;
-}
-
 @media all and (min-width: $tablet) {
   .form__full-name-block {
     padding-right: 43px;
@@ -329,11 +370,6 @@
   @media all and (min-width: $desktop) {
     margin-left: 0;
   }
-}
-
-.form__contacts-block .form__input {
-  grid-column: 1;
-  padding-left: 16px;
 }
 
 @media all and (min-width: $tablet) {
@@ -500,31 +536,6 @@
   @media all and (min-width: $desktop) {
     width: 768px;
     margin: 0 auto;
-  }
-}
-
-.form__textarea {
-  background: $pale-grey;
-  width: 100%;
-  padding: 16px;
-  box-sizing: border-box;
-  border: none;
-  margin-bottom: 56px;
-  color: $black;
-  font-weight: $font-weight-bold;
-  font-size: $font-size-m;
-  line-height: 26px;
-
-  &::placeholder {
-    font-family: $font-family;
-    font-weight: $font-weight-bold;
-    font-size: $font-size-m;
-    line-height: 26px;
-    color: $transparent-black;
-  }
-
-  @media all and (min-width: $tablet) {
-    grid-column: 1 / -1;
   }
 }
 
