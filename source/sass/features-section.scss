@@ -5,6 +5,10 @@
   @media all and (min-width: $tablet) {
     padding: 60px 0;
   }
+
+  @media all and (min-width: $desktop) {
+    padding-bottom: 82px;
+  }
 }
 
 .features-section__wrapper {
@@ -14,9 +18,16 @@
 
   @media all and (min-width: $tablet) {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-column-gap: 50px;
-    width: 92.8%;
+    grid-template-columns: 185px 156px 193px;
+    justify-content: space-between;
+    padding: 0 31px 0 36px;
+  }
+
+  @media all and (min-width: $desktop) {
+    grid-template-columns: 260px 290px 216px;
+    justify-content: start;
+    grid-column-gap: 133px;
+    padding: 0;
   }
 }
 

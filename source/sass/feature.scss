@@ -61,3 +61,11 @@
     grid-column: 1;
   }
 }
+
+.feature__description br {
+  display: none;
+
+  @media all and (min-width: $desktop) {
+    display: block;
+  }
+}

@@ -8,6 +8,10 @@
     @media all and (min-width: $tablet) {
       padding: 61px 0 58px 0;
     }
+
+    @media all and (min-width: $desktop) {
+      padding-bottom: 66px;
+    }
   }
 }
 
@@ -22,7 +26,7 @@
 .sentence__title {
   font-size: $font-size-l;
   display: block;
-  margin-bottom: 22px;
+  margin-bottom: 33px;
   color: $black;
 
   @media all and (min-width: $tablet) {
@@ -32,12 +36,16 @@
 }
 
 .sentence__description {
-  margin: 0 auto 32px;
+  margin: 0 auto 41px;
   color: $light-black;
   max-width: 435px;
 
   @media all and (min-width: $tablet) {
     margin-bottom: 40px;
+  }
+
+  @media all and (min-width: $desktop) {
+    margin-bottom: 46px;
   }
 }
 

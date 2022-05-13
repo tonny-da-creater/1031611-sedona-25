@@ -6,6 +6,14 @@
   }
 }
 
+.attractions--numb-2 .attraction__description {
+  max-width: 225px;
+}
+
+.attractions--numb-1 .attraction__description {
+  max-width: 270px;
+}
+
 .attractions__item {
   padding: 48px 15px 40px 15px;
 }
@@ -49,9 +57,16 @@
   margin: 0 auto;
 
   @media all and (min-width: $tablet) {
-    display: flex;
-    padding: 42px 0;
-    width: 90%;
+    display: grid;
+    grid-template-columns: 189px 140px 155px;
+    justify-content: space-between;
+    padding: 42px 50px 42px 33px;
+    width: 100%;
+  }
+
+  @media all and (min-width: $desktop) {
+    grid-template-columns: repeat(3, auto);
+    padding-bottom: 59px;
   }
 }
 
@@ -67,6 +82,7 @@
   @media all and (min-width: $tablet) {
     border-bottom: none;
     padding: 0;
+    width: 100%;
   }
 }
 
@@ -83,11 +99,13 @@
   font-size: $font-size-s;
   font-weight: $font-weight-normal;
   line-height: 21px;
+  margin-bottom: 26px;
 }
 
 .attractions__img {
   display: block;
   width: 100%;
+  height: 100%;
   object-fit: cover;
 
   @media all and (min-width: $tablet) {

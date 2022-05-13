@@ -76,7 +76,11 @@
   padding: 52px 0 67px 0;
 
   @media all and (min-width: $tablet) {
-    padding: 95px 0 117.4px;
+    padding: 95px 0 113px;
+  }
+
+  @media all and (min-width: $desktop) {
+    padding-bottom: 124px;
   }
 }
 

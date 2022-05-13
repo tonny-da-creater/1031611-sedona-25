@@ -34,11 +34,28 @@
     width: 33.3%;
     padding: 0 32px;
   }
+
+  @media all and (min-width: $desktop) {
+    justify-content: stretch;
+    padding-top: 47px;
+  }
 }
 
 .attraction__description {
   margin: 0 auto;
   max-width: 282px;
+
+  @media all and (min-width: $desktop) {
+    max-width: 100%;
+  }
+}
+
+.attraction__description br {
+  display: none;
+
+  @media all and (min-width: $desktop) {
+    display: block;
+  }
 }
 
 .attraction__num {
