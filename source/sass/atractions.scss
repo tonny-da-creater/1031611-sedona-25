@@ -6,16 +6,28 @@
   }
 }
 
-.attractions--numb-2 .attraction__description {
-  max-width: 225px;
+@media all and (min-width: $desktop) {
+  .attractions--numb-2 .attraction__description {
+    max-width: 225px;
+  }
+}
+
+.attractions--numb-2 .attractions__item {
+  padding: 44px 15px 33px 15px;
 }
 
 .attractions--numb-1 .attraction__description {
   max-width: 270px;
 }
 
+@media all and (min-width: $tablet) {
+  .attractions--numb-1 .attractions__item {
+    padding-top: 40px;
+  }
+}
+
 .attractions__item {
-  padding: 48px 15px 40px 15px;
+  padding: 44px 15px 43px 15px;
 }
 
 .about + .attractions .attractions__item {
@@ -77,6 +89,7 @@
 
   &:last-child {
     border-bottom: none;
+    padding: 26px 15px 30px 15px;
   }
 
   @media all and (min-width: $tablet) {
@@ -85,6 +98,13 @@
     width: 100%;
   }
 }
+
+@media all and (min-width: $tablet) {
+  .attractions__wrapper .attractions__item:last-child {
+    padding: 0;
+  }
+}
+
 
 .attractions__wrapper .attraction__title {
   color: $black;
@@ -99,7 +119,11 @@
   font-size: $font-size-s;
   font-weight: $font-weight-normal;
   line-height: 21px;
-  margin-bottom: 26px;
+  margin-bottom: 15px;
+
+  @media all and (min-width: $tablet) {
+    margin-bottom: 22px;
+  }
 }
 
 .attractions__img {

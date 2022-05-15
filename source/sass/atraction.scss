@@ -33,6 +33,7 @@
   @media all and (min-width: $tablet) {
     width: 33.3%;
     padding: 0 32px;
+    justify-content: stretch;
   }
 
   @media all and (min-width: $desktop) {
@@ -55,6 +56,16 @@
 
   @media all and (min-width: $desktop) {
     display: block;
+  }
+}
+
+@media all and (min-width: $tablet) {
+  .attractions--numb-1 .attraction__num {
+    margin-bottom: 24px;
+  }
+
+  .attractions--numb-2 .attraction__description {
+    max-width: 195px;
   }
 }
 

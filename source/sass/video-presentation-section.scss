@@ -8,6 +8,11 @@
 
   @media all and (min-width: $tablet) {
     padding: 57px 60px 40px;
+    padding-top: 50px;
+  }
+
+  @media all and (min-width: $desktop) {
+    padding-bottom: 92px;
   }
 }
 

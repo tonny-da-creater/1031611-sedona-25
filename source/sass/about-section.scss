@@ -11,13 +11,12 @@
   }
 
   @media all and (min-width: $desktop) {
-    padding-top: 61px;
     padding: 61px 24px 43px 24px;
   }
 }
 
 .about--wrapper-inner-page {
-  padding: 38px 0 28px 0;
+  padding: 38px 20px 28px 20px;
   text-align: center;
 
   @media all and (min-width: $tablet) {
@@ -25,8 +24,7 @@
   }
 
   @media all and (min-width: $desktop) {
-    padding-top: 61px;
-    padding: 61px 24px 43px 24px;
+    padding: 106px 24px 43px 24px;
   }
 }
 
@@ -35,6 +33,10 @@
 
   @media all and (min-width: $tablet) {
     font-size: $font-size-xl;
+  }
+
+  @media all and (min-width: $desktop) {
+    margin-bottom: 33px;
   }
 }
 
