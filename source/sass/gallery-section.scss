@@ -1,8 +1,14 @@
 .gallery-section--wrapper {
   margin: 0 auto;
   max-width: 648px;
+  padding-top: 10px;
+
+  @media all and (min-width: $tablet) {
+    max-width: 100%;
+    padding-top: 90px;
+  }
 
   @media all and (min-width: $desktop) {
-    max-width: 100%;
+    padding-top: 45px;
   }
 }

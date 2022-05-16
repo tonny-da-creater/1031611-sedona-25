@@ -6,6 +6,14 @@
   }
 }
 
+.attraction__title br {
+  display: none;
+
+  @media all and (min-width: $tablet) {
+    display: block;
+  }
+}
+
 .attraction {
   text-align: center;
   display: flex;
@@ -25,12 +33,40 @@
   @media all and (min-width: $tablet) {
     width: 33.3%;
     padding: 0 32px;
+    justify-content: stretch;
+  }
+
+  @media all and (min-width: $desktop) {
+    justify-content: stretch;
+    padding-top: 47px;
   }
 }
 
 .attraction__description {
   margin: 0 auto;
   max-width: 282px;
+
+  @media all and (min-width: $desktop) {
+    max-width: 100%;
+  }
+}
+
+.attraction__description br {
+  display: none;
+
+  @media all and (min-width: $desktop) {
+    display: block;
+  }
+}
+
+@media all and (min-width: $tablet) {
+  .attractions--numb-1 .attraction__num {
+    margin-bottom: 24px;
+  }
+
+  .attractions--numb-2 .attraction__description {
+    max-width: 195px;
+  }
 }
 
 .attraction__num {

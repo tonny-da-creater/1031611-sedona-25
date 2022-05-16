@@ -2,6 +2,7 @@
   list-style: none;
   margin: 0;
   padding: 0;
+  display: flex;
 }
 
 .socials__item {
@@ -25,8 +26,12 @@
   background-color: $primary-down-color;
 }
 
-.socials__item:active path {
-  fill: $down-grey-transparent;
+.socials__icon {
+  color: $white;
+}
+
+.socials__item:active .socials__icon {
+  color: $down-grey-transparent;
 }
 
 .socials__link {

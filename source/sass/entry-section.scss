@@ -68,15 +68,23 @@
   padding: 90px 0 85px 0;
 
   @media all and (min-width: $tablet) {
-    padding: 77px 0 91.03px 0;
+    padding: 77px 0 85px 0;
   }
 }
 
 .entry-section--wrapper-inner-page {
   padding: 52px 0 67px 0;
+  min-height: 158px;
+  height: 158px;
+  box-sizing: border-box;
 
   @media all and (min-width: $tablet) {
-    padding: 95px 0 117.4px;
+    padding: 95px 0 113px;
+    min-height: 290px;
+  }
+
+  @media all and (min-width: $desktop) {
+    padding-bottom: 124px;
   }
 }
 
@@ -91,4 +99,3 @@
     height: 78px;
   }
 }
-

@@ -1,7 +1,7 @@
 .feature {
   display: grid;
   grid-template-columns: 39px auto;
-  grid-row-gap: 16px;
+  grid-row-gap: 12px;
   grid-column-gap: 10px;
   justify-self: center;
   width: 282px;
@@ -9,6 +9,7 @@
   @media all and (min-width: $tablet) {
     grid-template-columns: 1fr;
     grid-template-rows: 80px min-content auto;
+    grid-row-gap: 21px;
     text-align: center;
     justify-self: center;
     width: auto;
@@ -45,6 +46,10 @@
   align-self: center;
   font-size: $font-size-m;
   color: $black;
+
+  @media all and (min-width: $tablet) {
+    font-size: $font-size-l;
+  }
 }
 
 .feature__description {
@@ -54,5 +59,13 @@
 
   @media all and (min-width: $tablet) {
     grid-column: 1;
+  }
+}
+
+.feature__description br {
+  display: none;
+
+  @media all and (min-width: $desktop) {
+    display: block;
   }
 }

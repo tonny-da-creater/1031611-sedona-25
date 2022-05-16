@@ -22,18 +22,15 @@
 }
 
 .developed__img {
-  width: 24px;
-  height: 29px;
+  width: 27px;
+  height: 34px;
+  color: $black;
 }
 
-.developed__img path {
-  fill: $black;
+.developed:hover .developed__img {
+  color: $primary-color;
 }
 
-.developed:hover path {
-  fill: $primary-color;
-}
-
-.developed:active path {
-  fill: $link-developed-down-color;
+.developed:active .developed__img {
+  color: $link-developed-down-color;
 }
