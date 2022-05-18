@@ -2,6 +2,7 @@
   font-family: "PT sans";
   font-style: normal;
   font-weight: 400;
+  font-display: swap;
   src: url("/fonts/ptsans.woff2") format("woff2"),
     url("/fonts/ptsans.woff") format("woff");
 }
@@ -10,6 +11,25 @@
   font-family: "PT sans";
   font-style: normal;
   font-weight: 700;
+  font-display: swap;
   src: url("/fonts/ptsansbold.woff2") format("woff2"),
     url("/fonts/ptsansbold.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Arial";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/fonts/ArialMT.woff2") format("woff2"),
+    url("/fonts/ArialMT.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Arial";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("/fonts/Arial-BoldMT.woff2") format("woff2"),
+    url("/fonts/Arial-BoldMT.woff") format("woff");
 }

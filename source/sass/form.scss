@@ -122,7 +122,7 @@
 
   &::placeholder {
     color: $transparent-black;
-    font-family: $font-family;
+    font-family: $font-family-main;
   }
 
   &:hover {
@@ -170,7 +170,7 @@
   box-sizing: border-box;
 
   &::placeholder {
-    font-family: $font-family;
+    font-family: $font-family-main;
     font-weight: $font-weight-bold;
     font-size: $font-size-m;
     line-height: 26px;
@@ -556,7 +556,6 @@
 }
 
 .form__hint {
-  font-family: $font-family;
   font-weight: $font-weight-bold;
   font-size: $font-size-xs;
   line-height: 21px;

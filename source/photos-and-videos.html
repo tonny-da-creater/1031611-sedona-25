@@ -5,6 +5,21 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/style.min.css">
+  <link rel="preload" href="css/style.min.css" as="style" crossorigin="anonymous">
+  <link rel="preload" href="fonts/Arial-BoldMT.woff" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/Arial-BoldMT.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/ArialMT.woff" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/ArialMT.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/ptsans.woff" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/ptsans.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/ptsansbold.woff" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/ptsansbold.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="img/entry-section-background-mobile.jpg" as="image" crossorigin="anonymous">
+  <link rel="preload" href="img/entry-section-background-mobile@2x.jpg" as="image" crossorigin="anonymous">
+  <link rel="preload" href="img/entry-section-background-tablet.jpg" as="image" crossorigin="anonymous">
+  <link rel="preload" href="img/entry-section-background-tablet@2x.jpg" as="image" crossorigin="anonymous">
+  <link rel="preload" href="img/entry-section-background-desktop.jpg" as="image" crossorigin="anonymous">
+  <link rel="preload" href="img/entry-section-background-desktop@2x.jpg" as="image" crossorigin="anonymous">
   <link rel="icon" href="favicon.ico">
   <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="img/apple.png">
@@ -44,7 +59,7 @@
     <h1 class="visually-hidden">Галерея</h1>
     <section class="entry-section entry-section--wrapper entry-section--wrapper-inner-page">
       <h2 class="visually-hidden">Седона</h2>
-      <img class="entry-section__img-short" width="229" height="39" src="img/sedona.svg" alt="Седона">
+      <img class="entry-section__img-short" width="229" height="39" loading="lazy" src="img/sedona.svg" alt="Седона">
     </section>
     <section class="about about--wrapper-inner-page">
       <h2 class="about__title title">фото и видео</h2>
@@ -54,9 +69,12 @@
       <li class="gallery-list__item">
         <a class="gallery-list__link-img" href="#">
           <picture>
+            <source type="image/webp" srcset="img/gallery-sedona-road-desktop.webp, img/gallery-sedona-road-desktop@2x.webp">
+            <source type="image/webp" srcset="img/gallery-sedona-road-tablet.webp, img/gallery-sedona-road-tablet@2x.webp">
+            <source type="image/webp" srcset="img/gallery-sedona-road-mobile.webp, img/gallery-sedona-road-mobile@2x.webp">
             <source media="(min-width: 1200px)" srcset="img/gallery-sedona-road-desktop.jpg, img/gallery-sedona-road-desktop@2x.jpg">
             <source media="(min-width: 768px)" srcset="img/gallery-sedona-road-tablet.jpg, img/gallery-sedona-road-tablet@2x.jpg">
-            <img class="gallery-list__img" width="280" height="280" src="img/gallery-sedona-road-mobile.jpg" srcset="img/gallery-sedona-road-mobile@2x.jpg" alt="дорога Седоны">
+            <img class="gallery-list__img" width="280" height="280" loading="lazy" src="img/gallery-sedona-road-mobile.jpg" srcset="img/gallery-sedona-road-mobile@2x.jpg" alt="дорога Седоны">
           </picture>
         </a>
         <div class="gallery-list__item-footer">
@@ -73,9 +91,12 @@
       <li class="gallery-list__item">
         <a class="gallery-list__link-img" href="#">
           <picture>
+            <source type="image/webp" srcset="img/gallery-vegetation-desktop.webp, img/gallery-vegetation-desktop@2x.webp">
+            <source type="image/webp" srcset="img/gallery-vegetation-tablet.webp, img/gallery-vegetation-tablet@2x.webp">
+            <source type="image/webp" srcset="img/gallery-vegetation-mobile.webp, img/gallery-vegetation-mobile@2x.webp">
             <source media="(min-width: 1200px)" srcset="img/gallery-vegetation-desktop.jpg, gallery-vegetation-desktop@2x.jpg">
             <source media="(min-width: 768px)" srcset="img/gallery-vegetation-tablet.jpg, gallery-vegetation-tablet@2x.jpg">
-            <img class="gallery-list__img" width="280" height="280" src="img/gallery-vegetation-mobile.jpg" srcset="img/gallery-vegetation-mobile@2x.jpg" alt="Растительность Седоны">
+            <img class="gallery-list__img" width="280" height="280" loading="lazy" src="img/gallery-vegetation-mobile.jpg" srcset="img/gallery-vegetation-mobile@2x.jpg" alt="Растительность Седоны">
           </picture>
         </a>
         <div class="gallery-list__item-footer">
@@ -92,9 +113,12 @@
       <li class="gallery-list__item">
         <a class="gallery-list__link-img" href="#">
           <picture>
+            <source type="images/webp" srcset="img/gallery-road-to-the-north-desktop.webp, img/gallery-road-to-the-north-desktop@2x.webp">
+            <source type="images/webp" srcset="img/gallery-road-to-the-north-tablet.webp, img/gallery-road-to-the-north-tablet@2x.webp">
+            <source type="images/webp" srcset="img/gallery-road-to-the-north-mobile.webp, img/gallery-road-to-the-north-mobile@2x.webp">
             <source media="(min-width: 1200px)" srcset="img/gallery-road-to-the-north-desktop.jpg, img/gallery-road-to-the-north-desktop@2x.jpg">
             <source media="(min-width: 768px)" srcset="img/gallery-road-to-the-north-tablet.jpg, img/gallery-road-to-the-north-tablet@2x.jpg">
-            <img class="gallery-list__img" width="280" height="280" src="img/gallery-road-to-the-north-mobile.jpg" srcset="img/gallery-road-to-the-north-mobile@2x.jpg" alt="Дорога на север">
+            <img class="gallery-list__img" width="280" height="280" loading="lazy" src="img/gallery-road-to-the-north-mobile.jpg" srcset="img/gallery-road-to-the-north-mobile@2x.jpg" alt="Дорога на север">
           </picture>
         </a>
         <div class="gallery-list__item-footer">
@@ -111,9 +135,12 @@
       <li class="gallery-list__item">
         <a class="gallery-list__link-img" href="#">
           <picture>
+            <source type="image/webp" srcset="img/gallery-devils-bridge-desktop.webp, img/gallery-devils-bridge-desktop@2x.webp">
+            <source type="image/webp" srcset="img/gallery-devils-bridge-tablet.webp, img/gallery-devils-bridge-tablet@2x.webp">
+            <source type="image/webp" srcset="img/gallery-devils-bridge-mobile.webp, img/gallery-devils-bridge-mobile@2x.webp">
             <source media="(min-width: 1200px)" srcset="img/gallery-devils-bridge-desktop.jpg, img/gallery-devils-bridge-desktop@2x">
             <source media="(min-width: 768px)" srcset="img/gallery-devils-bridge-tablet.jpg, img/gallery-devils-bridge-tablet@2x">
-            <img class="gallery-list__img" width="280" height="280" src="img/gallery-devils-bridge-mobile.jpg" srcset="img/gallery-devils-bridge-mobile@2x.jpg" alt="Мост Дьявола в Седоне">
+            <img class="gallery-list__img" width="280" height="280" loading="lazy" src="img/gallery-devils-bridge-mobile.jpg" srcset="img/gallery-devils-bridge-mobile@2x.jpg" alt="Мост Дьявола в Седоне">
           </picture>
         </a>
         <div class="gallery-list__item-footer">
@@ -133,9 +160,12 @@
       <b class="video-presentation-section__title title">Все еще сомневаетесь?</b>
       <p class="video-presentation-section__description description">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
       <picture>
+        <source type="image/webp" srcset="img/video-preview-desktop.webp, img/video-preview-desktop@2x.webp">
+        <source type="image/webp" srcset="img/video-preview-tablet.webp, img/video-preview-tablet@2x.webp">
+        <source type="image/webp" srcset="img/video-preview-mobile.webp, img/video-preview-mobile@2x.webp">
         <source media="(min-width: 1200px)" srcset="img/video-preview-desktop.jpg, img/video-preview-desktop@2x.jpg">
         <source media="(min-width: 768px)" srcset="img/video-preview-tablet.jpg, img/video-preview-tablet@2x.jpg">
-        <img class="video-presentation-section__video-preview" width="280" height="177" src="img/video-preview-mobile.jpg" srcset="img/video-preview-mobile@2x.jpg" alt="превью видео">
+        <img class="video-presentation-section__video-preview" width="280" height="177" loading="lazy" src="img/video-preview-mobile.jpg" srcset="img/video-preview-mobile@2x.jpg" alt="превью видео">
       </picture>
     </section>
   </main>

@@ -5,6 +5,21 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/style.min.css">
+  <link rel="preload" href="css/style.min.css" as="style" crossorigin="anonymous">
+  <link rel="preload" href="fonts/Arial-BoldMT.woff" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/Arial-BoldMT.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/ArialMT.woff" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/ArialMT.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/ptsans.woff" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/ptsans.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/ptsansbold.woff" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/ptsansbold.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="img/entry-section-background-mobile.jpg" as="image" crossorigin="anonymous">
+  <link rel="preload" href="img/entry-section-background-mobile@2x.jpg" as="image" crossorigin="anonymous">
+  <link rel="preload" href="img/entry-section-background-tablet.jpg" as="image" crossorigin="anonymous">
+  <link rel="preload" href="img/entry-section-background-tablet@2x.jpg" as="image" crossorigin="anonymous">
+  <link rel="preload" href="img/entry-section-background-desktop.jpg" as="image" crossorigin="anonymous">
+  <link rel="preload" href="img/entry-section-background-desktop@2x.jpg" as="image" crossorigin="anonymous">
   <link rel="icon" href="favicon.ico">
   <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="img/apple.png">
@@ -43,7 +58,7 @@
   <main class="main-content main-content--wrapper">
     <section class="entry-section entry-section--wrapper entry-section--wrapper-main-page">
       <h2 class="visually-hidden">Седона</h2>
-      <img class="entry-section__img-full" src="img/welcome-sedona-slogan.svg" width="282" height="210" alt="Добро пожаловать в Седону, потому что гранд каньон отстой">
+      <img class="entry-section__img-full" src="img/welcome-sedona-slogan.svg" loading="lazy" width="282" height="210" alt="Добро пожаловать в Седону, потому что гранд каньон отстой">
     </section>
     <section class="about about--wrapper-main-page">
       <h1 class="about__title title">СЕДОНА — небольшой городок в Аризоне, заслужвающий большего!</h1>
@@ -64,7 +79,7 @@
           <source type="image/webp" srcset="img/sedona-house-mobile.webp, img/sedona-house-mobile@2x.webp">
           <source media="(min-width: 1200px)" srcset="img/sedona-house-desktop.jpg, img/sedona-house-desktop@2x.jpg">
           <source media="(min-width: 768px)" srcset="img/sedona-house-tablet.jpg, img/sedona-house-tablet@2x.jpg">
-          <img class="attractions__img" src="img/sedona-house-mobile.jpg" srcset="img/sedona-house-mobile@2x.jpg" width="520" height="260" alt="Дом в Седоне">
+          <img class="attractions__img" src="img/sedona-house-mobile.jpg" srcset="img/sedona-house-mobile@2x.jpg" loading="lazy" width="520" height="260" alt="Дом в Седоне">
         </picture>
       </div>
     </section>
@@ -101,9 +116,12 @@
       </div>
       <div class="attractions__picture-wrapper attractions__picture-wrapper--">
         <picture>
+          <source type="image/webp" srcset="img/sedona-rocks-desktop.webp, img/sedona-rocks-desktop@2x.webp">
+          <source type="image/webp" srcset="img/sedona-rocks-tablet.webp, img/sedona-rocks-tablet@2x.webp">
+          <source type="image/webp" srcset="img/sedona-rocks-mobile.webp, img/sedona-rocks-mobile@2x.webp">
           <source media="(min-width: 1200px)" srcset="img/sedona-rocks-desktop.jpg, img/sedona-rocks-desktop@2x.jpg">
           <source media="(min-width: 768px)" srcset="img/sedona-rocks-tablet.jpg, img/sedona-rocks-tablet@2x.jpg">
-          <img class="attractions__img attractions__img--order" src="img/sedona-rocks-mobile.jpg" srcset="img/sedona-rocks-mobile@2x.jpg" width="520" height="260" alt="Скалы в Седоне">
+          <img class="attractions__img attractions__img--order" src="img/sedona-rocks-mobile.jpg" srcset="img/sedona-rocks-mobile@2x.jpg" loading="lazy" width="520" height="260" alt="Скалы в Седоне">
         </picture>
       </div>
     </section>
