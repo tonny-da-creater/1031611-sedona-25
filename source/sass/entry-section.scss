@@ -2,6 +2,10 @@
   background: url("../img/entry-section-background-mobile.jpg") no-repeat center /cover;
   background-color: $black;
 
+  @media all and (min-resolution: 2dppx) {
+    background: url("../img/entry-section-background-mobile@2x.jpg") no-repeat center /cover;
+  }
+
   @media all and (min-width: $tablet) {
     background: url("../img/entry-section-background-tablet.jpg") no-repeat center /cover;
 
@@ -12,6 +16,10 @@
 
   @media all and (min-width: $desktop) {
     background: url("../img/entry-section-background-desktop.jpg") no-repeat center /cover;
+
+    @media all and (min-resolution: 2dppx) {
+      background: url("../img/entry-section-background-desktop@2x.jpg") no-repeat center /cover;
+    }
   }
 }
 

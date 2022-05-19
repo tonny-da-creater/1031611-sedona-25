@@ -73,12 +73,13 @@ webp: {}
 // SVG
 
 const svg = () =>
-gulp.src(['source/img/*.svg', '!source/img/favicons/*.{svg, png}'])
+gulp.src(['source/img/*.svg', '!source/img/sprite-icons/*.{svg, png}'])
 .pipe(svgo())
 .pipe(gulp.dest('build/img'));
 
 const sprite = () => {
-return gulp.src('source/img/*.svg')
+return gulp.src('source/img/sprite-icons/*.svg')
+.pipe(svgo())
 .pipe(svgstore({
 inlineSvg: true
 }))
