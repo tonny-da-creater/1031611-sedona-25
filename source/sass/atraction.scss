@@ -3,6 +3,7 @@
 
   @media all and (min-width: $tablet) {
     font-size: $font-size-l;
+    margin-bottom: 14px;
   }
 }
 
@@ -64,8 +65,36 @@
     margin-bottom: 24px;
   }
 
+  .attractions--numb-2 .attraction__num {
+    margin-bottom: 23px;
+  }
+
   .attractions--numb-2 .attraction__description {
     max-width: 195px;
+  }
+
+  .attractions--numb-3 {
+    width: 71%;
+  }
+
+  .attractions--numb-4 {
+    width: 58%;
+  }
+
+  .attractions--numb-5 {
+    width: 65%;
+  }
+}
+
+@media all and (min-width: $desktop) {
+  .attractions--numb-4 {
+    width: 65%;
+  }
+}
+
+@media all and (min-width: $desktop) {
+  .attractions--numb-2 .attraction__description {
+    max-width: 214px;
   }
 }
 

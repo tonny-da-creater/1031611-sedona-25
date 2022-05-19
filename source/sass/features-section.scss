@@ -20,11 +20,11 @@
     display: grid;
     grid-template-columns: 185px 156px 193px;
     justify-content: space-between;
-    padding: 0 31px 0 36px;
+    width: 91.3%;
   }
 
   @media all and (min-width: $desktop) {
-    grid-template-columns: 260px 290px 216px;
+    grid-template-columns: 260px 282px 242px;
     justify-content: start;
     grid-column-gap: 133px;
     padding: 0;

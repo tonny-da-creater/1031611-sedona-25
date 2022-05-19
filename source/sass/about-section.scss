@@ -3,7 +3,7 @@
 }
 
 .about--wrapper-main-page {
-  padding: 32px 24px 38px 24px;
+  padding: 32px 24px 42px 24px;
   text-align: center;
 
   @media all and (min-width: $tablet) {
@@ -15,8 +15,14 @@
   }
 }
 
+@media all and (min-width: $desktop) {
+  .about--wrapper-main-page .about__title {
+    margin-bottom: 30px;
+  }
+}
+
 .about--wrapper-inner-page {
-  padding: 38px 20px 28px 20px;
+  padding: 38px 20px 26px 20px;
   text-align: center;
 
   @media all and (min-width: $tablet) {
@@ -24,7 +30,7 @@
   }
 
   @media all and (min-width: $desktop) {
-    padding: 106px 24px 43px 24px;
+    padding: 115px 43px 43px;
   }
 }
 
