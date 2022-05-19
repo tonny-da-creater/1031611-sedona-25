@@ -319,7 +319,7 @@
 }
 
 .form__full-name-block .form__item-wrapper {
-  margin-bottom: 13px;
+  margin-bottom: 15px;
 
   &:last-child {
     margin-bottom: 0;
@@ -407,7 +407,7 @@
   @media all and (min-width: $tablet) {
     position: relative;
     overflow: hidden;
-    padding: 24px 0;
+    padding: 48px 0 24px 0;
   }
 
   @media all and (min-width: $desktop) {
@@ -455,11 +455,11 @@
   text-align: center;
 
   @media all and (min-width: $tablet) {
-    padding: 24px 0 21px 0;
+    padding: 24px 0;
   }
 
   @media all and (min-width: $desktop) {
-    padding: 46px 0;
+    padding: 42px 0;
   }
 }
 
@@ -557,6 +557,7 @@
 
 .form__button-submit {
   width: 100%;
+  margin-bottom: 4px;
 }
 
 .form__hint {
