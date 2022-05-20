@@ -77,6 +77,7 @@
 
 .main-nav--closed .main-nav__list {
   opacity: 0;
+  visibility: hidden;
 }
 
 .main-nav--opened + .main-nav__toggle {

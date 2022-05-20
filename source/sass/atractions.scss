@@ -6,44 +6,6 @@
   }
 }
 
-.attractions--numb-2 .attractions__item {
-  padding: 38px 15px 36px 15px;
-
-  @media all and (min-width: $tablet) {
-    padding: 45px 15px 36px;
-  }
-
-  @media all and (min-width: $desktop) {
-    padding-top: 49px;
-  }
-}
-
-.attractions--numb-1 .attraction__description {
-  max-width: 270px;
-}
-
-.attractions--numb-1 .attractions__item {
-  padding: 47px 15px 40px 15px;
-
-  @media all and (min-width: $tablet) {
-    padding: 42px 16px 40px;
-  }
-
-  @media all and (min-width: $desktop) {
-    padding: 48px 16px 40px;
-  }
-}
-
-@media all and (min-width: $tablet) {
-  .attractions--numb-1 .attraction__title {
-    max-width: 216px;
-  }
-
-  .attractions--numb-2 .attraction__title {
-    max-width: 150px;
-  }
-}
-
 .about + .attractions .attractions__item {
   position: relative;
 

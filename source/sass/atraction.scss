@@ -61,39 +61,39 @@
 }
 
 @media all and (min-width: $tablet) {
-  .attractions--numb-1 .attraction__num {
+  .attraction--numb-1 .attraction__num {
     margin-bottom: 24px;
   }
 
-  .attractions--numb-2 .attraction__num {
+  .attraction--numb-2 .attraction__num {
     margin-bottom: 23px;
   }
 
-  .attractions--numb-2 .attraction__description {
+  .attraction--numb-2 .attraction__description {
     max-width: 195px;
   }
 
-  .attractions--numb-3 {
+  .attraction--numb-3 {
     width: 71%;
   }
 
-  .attractions--numb-4 {
+  .attraction--numb-4 {
     width: 58%;
   }
 
-  .attractions--numb-5 {
+  .attraction--numb-5 {
     width: 65%;
   }
 }
 
 @media all and (min-width: $desktop) {
-  .attractions--numb-4 {
+  .attraction--numb-4 {
     width: 65%;
   }
 }
 
 @media all and (min-width: $desktop) {
-  .attractions--numb-2 .attraction__description {
+  .attraction--numb-2 .attraction__description {
     max-width: 214px;
   }
 }
@@ -132,3 +132,43 @@
 .attractions__wrapper .attraction__num::after {
   background-color: $light-black;
 }
+
+.attraction--numb-1 {
+  padding: 47px 15px 40px 15px;
+
+  @media all and (min-width: $tablet) {
+    padding: 42px 16px 40px;
+  }
+
+  @media all and (min-width: $desktop) {
+    padding: 48px 16px 40px;
+  }
+}
+
+.attraction--numb-2 {
+  padding: 38px 15px 36px 15px;
+
+  @media all and (min-width: $tablet) {
+    padding: 45px 15px 36px;
+  }
+
+  @media all and (min-width: $desktop) {
+    padding-top: 49px;
+  }
+}
+
+.attraction--numb-1 .attraction__description {
+  max-width: 270px;
+}
+
+@media all and (min-width: $tablet) {
+  .attraction--numb-1 .attraction__title {
+    max-width: 216px;
+  }
+
+  .attraction--numb-2 .attraction__title {
+    max-width: 150px;
+  }
+}
+
+
