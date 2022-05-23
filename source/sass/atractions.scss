@@ -6,30 +6,6 @@
   }
 }
 
-@media all and (min-width: $desktop) {
-  .attractions--numb-2 .attraction__description {
-    max-width: 225px;
-  }
-}
-
-.attractions--numb-2 .attractions__item {
-  padding: 44px 15px 33px 15px;
-}
-
-.attractions--numb-1 .attraction__description {
-  max-width: 270px;
-}
-
-@media all and (min-width: $tablet) {
-  .attractions--numb-1 .attractions__item {
-    padding-top: 40px;
-  }
-}
-
-.attractions__item {
-  padding: 44px 15px 43px 15px;
-}
-
 .about + .attractions .attractions__item {
   position: relative;
 
@@ -65,19 +41,17 @@
 
 .attractions__wrapper {
   width: 88.75%;
-  max-width: 1064px;
   margin: 0 auto;
 
   @media all and (min-width: $tablet) {
     display: grid;
-    grid-template-columns: 189px 140px 155px;
-    justify-content: space-between;
-    padding: 42px 50px 42px 33px;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center;
+    padding: 42px 0 42px 0;
     width: 100%;
   }
 
   @media all and (min-width: $desktop) {
-    grid-template-columns: repeat(3, auto);
     padding-bottom: 59px;
   }
 }
@@ -89,13 +63,12 @@
 
   &:last-child {
     border-bottom: none;
-    padding: 26px 15px 30px 15px;
+    padding: 26px 15px;
   }
 
   @media all and (min-width: $tablet) {
     border-bottom: none;
     padding: 0;
-    width: 100%;
   }
 }
 
@@ -108,6 +81,10 @@
 
 .attractions__wrapper .attraction__title {
   color: $black;
+
+  @media all and (min-width: $tablet) {
+    max-width: 159px;
+  }
 }
 
 .attractions__wrapper .attraction__description {
@@ -119,7 +96,7 @@
   font-size: $font-size-s;
   font-weight: $font-weight-normal;
   line-height: 21px;
-  margin-bottom: 15px;
+  margin-bottom: 16px;
 
   @media all and (min-width: $tablet) {
     margin-bottom: 22px;

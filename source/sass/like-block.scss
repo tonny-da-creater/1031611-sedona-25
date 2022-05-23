@@ -6,17 +6,14 @@
   margin-right: 14px;
   color: $active-color;
 
+  @media all and (min-width: $tablet) {
+    margin: 5px 9px 0 0;
+  }
+
   @media all and (min-width: $desktop) {
     color: $white;
   }
 }
-
-// .like-block__icon-svg path {
-//   @media all and (min-width: $desktop) {
-//     fill: $white;
-//     opacity: 1;
-//   }
-// }
 
 .like-block__count {
   font-style: normal;
@@ -24,6 +21,11 @@
   font-size: $font-size-s;
   line-height: 21px;
   color: $black;
+  margin-top: 5px;
+
+  @media all and (min-width: $tablet) {
+    margin-top: 8px;
+  }
 
   @media all and (min-width: $desktop) {
     color: $white;

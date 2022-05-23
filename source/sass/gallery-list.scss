@@ -17,7 +17,7 @@
 }
 
 .gallery-list__item {
-  padding: 24px 20px 21px 20px;
+  padding: 24px 20px 25px;
   border-top: 1px solid $very-light-grey;
   display: grid;
 
@@ -124,7 +124,7 @@
 
 .gallery-list__description + .gallery-list__author,
 .gallery-list__author + .gallery-list__description {
-  margin-top: 5px;
+  margin-top: 2px;
 }
 
 .gallery-list__author {

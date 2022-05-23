@@ -10,7 +10,7 @@
     max-width: 960px;
     border-top: none;
     margin: 0 auto;
-    padding-top: 102px;
+    padding-top: 103px;
   }
 
   @media all and (min-width: $desktop) {
@@ -116,6 +116,7 @@
   border: none;
   box-sizing: border-box;
   color: $black;
+  font-family: $font-family-main, $font-family-regular, sans-serif;
   font-weight: $font-weight-bold;
   font-size: $font-size-m;
   line-height: 26px;
@@ -159,9 +160,9 @@
   width: 100%;
   padding: 16px;
   border: none;
-  margin-bottom: 54px;
-  height: 160px;
-  min-height: 160px;
+  margin-bottom: 53px;
+  height: 150px;
+  min-height: 150px;
   color: $black;
   font-weight: $font-weight-bold;
   font-size: $font-size-m;
@@ -193,6 +194,8 @@
 
   @media all and (min-width: $tablet) {
     grid-column: 1 / -1;
+    height: 160px;
+    margin-bottom: 47px;
   }
 
   @media all and (min-width: $desktop) {
@@ -279,7 +282,8 @@
 .form__type-radio-group,
 .form__type-checkbox-group,
 .form__full-name-block,
-.form__contacts-block {
+.form__contacts-block,
+.form__type-area {
   border-top: 1px solid $very-light-grey;
 
   @media all and (min-width: $tablet) {
@@ -294,11 +298,9 @@
   @media all and (min-width: $tablet) {
     padding-bottom: 15px;
     padding-top: 0;
-    margin-bottom: 24px;
   }
 
   @media all and (min-width: $desktop) {
-    margin-bottom: 28px;
     margin-right: -14px;
   }
 }
@@ -317,7 +319,7 @@
 }
 
 .form__full-name-block .form__item-wrapper {
-  margin-bottom: 16px;
+  margin-bottom: 15px;
 
   &:last-child {
     margin-bottom: 0;
@@ -405,11 +407,11 @@
   @media all and (min-width: $tablet) {
     position: relative;
     overflow: hidden;
-    padding: 24px 0;
+    padding: 48px 0 24px 0;
   }
 
   @media all and (min-width: $desktop) {
-    padding: 23px 0 28px 0;
+    padding: 58px 0 28px 0;
   }
 }
 
@@ -430,6 +432,7 @@
     margin: 0 auto;
     width: 578px;
     grid-template-columns: 1fr 1fr;
+    grid-column-gap: 16px;
   }
 
   @media all and (min-width: $desktop) {
@@ -452,11 +455,11 @@
   text-align: center;
 
   @media all and (min-width: $tablet) {
-    padding: 24px 0 21px 0;
+    padding: 24px 0;
   }
 
   @media all and (min-width: $desktop) {
-    padding: 28px 0;
+    padding: 42px 0;
   }
 }
 
@@ -471,6 +474,7 @@
     width: 480px;
     margin: 0 auto;
     grid-template-columns: 1fr 1fr;
+    grid-column-gap: 32px;
   }
 
   @media all and (min-width: $desktop) {
@@ -488,7 +492,7 @@
 }
 
 .form__type-area {
-  padding: 24px 0;
+  padding: 22px 0;
   text-align: center;
   overflow: hidden;
 
@@ -497,7 +501,7 @@
   }
 
   @media all and (min-width: $desktop) {
-    padding: 55px 0 64px 0;
+    padding: 37px 0 64px 0;
   }
 }
 
@@ -553,6 +557,7 @@
 
 .form__button-submit {
   width: 100%;
+  margin-bottom: 4px;
 }
 
 .form__hint {
@@ -566,6 +571,7 @@
   @media all and (min-width: $tablet) {
     color: $light-black;
     font-size: $font-size-s;
+    margin-top: 5px;
   }
 
   @media all and (min-width: $desktop) {
