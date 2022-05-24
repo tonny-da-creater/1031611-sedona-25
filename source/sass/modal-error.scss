@@ -61,8 +61,10 @@
 .modal-error__button-submit {
   margin: 0 auto;
   padding: 18px 78px 14px 77px;
+  font-size: $font-size-m;
 
   @media all and (min-width: $tablet) {
     padding: 18px 122px 14px 121px;
+    font-size: $font-size-l;
   }
 }

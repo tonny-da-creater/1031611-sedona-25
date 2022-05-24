@@ -17,29 +17,61 @@
 
 .modal-success__content {
   background-color: $white;
-  max-width: 400px;
+  max-width: 640px;
   margin: 0 auto;
-  padding: 39px 53px 35px 52px;
   position: relative;
   box-sizing: border-box;
-  top: 55%;
+  top: 70.8%;
+
+  @media all and (min-width: $tablet) {
+    top: 58%;
+  }
+
+  @media all and (min-width: $desktop) {
+    top: 57%;
+  }
+}
+
+.modal-success__header {
+  padding: 39px 53px 52px 52px;
+
+  @media all and (min-width: $tablet) {
+    padding: 50px 53px 44px 52px;
+  }
+}
+
+.modal-success__footer {
+  padding: 20px;
+  background-color: $pale-grey;
+
+  @media all and (min-width: $tablet) {
+    padding: 44px 91px;
+  }
 }
 
 .modal-success__title {
   color: $black;
   font-size: $font-size-m;
   display: block;
-  margin-bottom: 24px;
+  margin-bottom: 26px;
 
   @media all and (min-width: $tablet) {
     font-size: $font-size-xl;
     line-height: 40px;
     margin-bottom: 22px;
-    max-width: 220px;
     margin: 0 auto 25px;
   }
 }
 
 .modal-success__description br {
     display: block;
+}
+
+.modal-success__button-submit {
+  width: 100%;
+  font-size: $font-size-m;
+
+  @media all and (min-width: $tablet) {
+    font-size: $font-size-l;
+  }
 }
