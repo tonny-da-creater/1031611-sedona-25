@@ -1,5 +1,6 @@
 html {
-  height: 100%;
+  background-color: $pale-grey;
+  position: relative;
 }
 
 body {
@@ -8,10 +9,11 @@ body {
   font-family: $font-family-main, $font-family-regular, sans-serif;
   min-width: 320px;
   max-width: 1200px;
-  height: 100%;
+  min-height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  box-shadow: 0px 5px 15px $black-second-shadow;
 }
 
 a {

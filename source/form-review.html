@@ -66,83 +66,85 @@
       <p class="about__description about__description--fix-width description">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
     </section>
     <form class="form" action="#" method="post">
-      <div class="form__full-name-block">
-        <div class="form__full-name-block-container">
-          <b class="form__title title">Представьтесь:</b>
-          <div class="form__item-wrapper">
-            <label class="form__label" for="first-name">ИМЯ*:</label>
-            <input class="form__input" type="text" name="first-name" id="first-name" required placeholder="Введите имя">
-          </div>
-          <div class="form__item-wrapper">
-            <label class="form__label" for="last-name">ФАМИЛИЯ*:</label>
-            <input class="form__input" type="text" name="last-name" id="last-name" required placeholder="Введите фамилию">
-          </div>
-          <div class="form__item-wrapper">
-            <label class="form__label" for="patronymic">Отчество:</label>
-            <input class="form__input" type="text" name="patronymic" id="patronymic" placeholder="Введите отчество">
-          </div>
-        </div>
-      </div>
-      <div class="form__contacts-block">
-        <div class="form__contacts-block-container">
-          <b class="form__title title">Контактная информация:</b>
-          <div class="form__item-wrapper">
-            <label class="form__label" for="phone">Контактный телефон*:</label>
-            <input class="form__input" type="tel" name="phone" id="phone" placeholder="Введите телефон" required>
-            <div class="form__icon-wrapper">
-              <svg class="form__icon" width="18" height="18">
-                <use xlink:href="./img/sprite.svg#phone"></use>
-              </svg>
+      <div class="form__wrapper">
+        <div class="form__full-name-block">
+          <div class="form__full-name-block-container">
+            <b class="form__title title">Представьтесь:</b>
+            <div class="form__item-wrapper">
+              <label class="form__label" for="first-name">ИМЯ*:</label>
+              <input class="form__input" type="text" name="first-name" id="first-name" required placeholder="Введите имя">
             </div>
-          </div>
-          <div class="form__item-wrapper">
-            <label class="form__label" for="phone">Электронная почта*:</label>
-            <input class="form__input" type="email" name="email" id="email" placeholder="Введите e-mail" required>
-            <div class="form__icon-wrapper">
-              <svg class="form__icon" width="16" height="12">
-                <use xlink:href="./img/sprite.svg#mail"></use>
-              </svg>
+            <div class="form__item-wrapper">
+              <label class="form__label" for="last-name">ФАМИЛИЯ*:</label>
+              <input class="form__input" type="text" name="last-name" id="last-name" required placeholder="Введите фамилию">
+            </div>
+            <div class="form__item-wrapper">
+              <label class="form__label" for="patronymic">Отчество:</label>
+              <input class="form__input" type="text" name="patronymic" id="patronymic" placeholder="Введите отчество">
             </div>
           </div>
         </div>
-      </div>
-      <div class="form__type-radio-group">
-        <b class="form__title title">Ваше Общее впечатление:</b>
-        <div class="form__type-radio-group-container">
-          <p class="form__item-wrapper">
-            <input class="form__input form__input--radio" type="radio" name="grade" id="positive"><label class="form__label" for="positive">Скорее положительное</label>
-          </p>
-          <p class="form__item-wrapper">
-            <input class="form__input form__input--radio" type="radio" name="grade" id="negative"><label class="form__label" for="negative">Скорее отрицательное</label>
-          </p>
-          <p class="form__item-wrapper">
-            <input class="form__input form__input--radio" type="radio" name="grade" id="dont-know"><label class="form__label" for="dont-know">Затрудняюсь ответить</label>
-          </p>
+        <div class="form__contacts-block">
+          <div class="form__contacts-block-container">
+            <b class="form__title title">Контактная информация:</b>
+            <div class="form__item-wrapper">
+              <label class="form__label" for="phone">Контактный телефон*:</label>
+              <input class="form__input" type="tel" name="phone" id="phone" placeholder="Введите телефон" required>
+              <div class="form__icon-wrapper">
+                <svg class="form__icon" width="18" height="18">
+                  <use xlink:href="./img/sprite.svg#phone"></use>
+                </svg>
+              </div>
+            </div>
+            <div class="form__item-wrapper">
+              <label class="form__label" for="email">Электронная почта*:</label>
+              <input class="form__input" type="email" name="email" id="email" placeholder="Введите e-mail" required>
+              <div class="form__icon-wrapper">
+                <svg class="form__icon" width="16" height="12">
+                  <use xlink:href="./img/sprite.svg#mail"></use>
+                </svg>
+              </div>
+            </div>
+          </div>
         </div>
-      </div>
-      <div class="form__type-checkbox-group">
-        <b class="form__title title">посещенные  достопримечательности:</b>
-        <div class="form__type-checkbox-group-container">
-          <p class="form__item-wrapper">
-            <input class="form__input form__input--checkbox" id="devils-bridge" type="checkbox" checked><label class="form__label" for="devils-bridge">Мост Дьявола</label>
-          </p>
-          <p class="form__item-wrapper">
-            <input class="form__input form__input--checkbox" id="mount-bell" type="checkbox" checked><label class="form__label" for="mount-bell">Гора-Колокол</label>
-          </p>
-          <p class="form__item-wrapper">
-            <input class="form__input form__input--checkbox" id="slide-park" type="checkbox" checked><label class="form__label" for="slide-park">Слайд-парк</label>
-          </p>
-          <p class="form__item-wrapper">
-            <input class="form__input form__input--checkbox" id="red-rocks" type="checkbox"><label class="form__label" for="red-rocks">Красные скалы</label>
-          </p>
+        <div class="form__type-radio-group">
+          <b class="form__title title">Ваше Общее впечатление:</b>
+          <div class="form__type-radio-group-container">
+            <p class="form__item-wrapper">
+              <input class="form__input form__input--radio" type="radio" name="grade" id="positive"><label class="form__label" for="positive">Скорее положительное</label>
+            </p>
+            <p class="form__item-wrapper">
+              <input class="form__input form__input--radio" type="radio" name="grade" id="negative"><label class="form__label" for="negative">Скорее отрицательное</label>
+            </p>
+            <p class="form__item-wrapper">
+              <input class="form__input form__input--radio" type="radio" name="grade" id="dont-know"><label class="form__label" for="dont-know">Затрудняюсь ответить</label>
+            </p>
+          </div>
         </div>
-      </div>
-      <div class="form__type-area">
-        <b class="form__title title">Опишите свои эмоции:</b>
-        <div class="form__type-area-container">
-          <textarea class="form__textarea" cols="30" rows="5" placeholder="Опишите подробно все свои восторги "></textarea>
-          <button class="form__button-submit button" type="submit">ОТПРАВИТЬ ОТЗЫВ</button>
-          <p class="form__hint">* — обязательные поля</p>
+        <div class="form__type-checkbox-group">
+          <b class="form__title title">посещенные  достопримечательности:</b>
+          <div class="form__type-checkbox-group-container">
+            <p class="form__item-wrapper">
+              <input class="form__input form__input--checkbox" id="devils-bridge" type="checkbox" checked><label class="form__label" for="devils-bridge">Мост Дьявола</label>
+            </p>
+            <p class="form__item-wrapper">
+              <input class="form__input form__input--checkbox" id="mount-bell" type="checkbox" checked><label class="form__label" for="mount-bell">Гора-Колокол</label>
+            </p>
+            <p class="form__item-wrapper">
+              <input class="form__input form__input--checkbox" id="slide-park" type="checkbox" checked><label class="form__label" for="slide-park">Слайд-парк</label>
+            </p>
+            <p class="form__item-wrapper">
+              <input class="form__input form__input--checkbox" id="red-rocks" type="checkbox"><label class="form__label" for="red-rocks">Красные скалы</label>
+            </p>
+          </div>
+        </div>
+        <div class="form__type-area">
+          <b class="form__title title">Опишите свои эмоции:</b>
+          <div class="form__type-area-container">
+            <textarea class="form__textarea" cols="30" rows="5" placeholder="Опишите подробно все свои восторги "></textarea>
+            <button class="form__button-submit button" type="submit">ОТПРАВИТЬ ОТЗЫВ</button>
+            <p class="form__hint">* — обязательные поля</p>
+          </div>
         </div>
       </div>
     </form>
@@ -184,16 +186,20 @@
       </a>
     </div>
   </footer>
-  <div class="popup popup--error">
-    <b class="popup__title title">ЧТО-ТО ПОШЛО НЕ ТАК!</b>
-    <p class="popup__description description">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
-    <button class="popup__button-submit button" type="button">OK</button>
+  <div class="modal-error modal-error">
+    <div class="modal-error__content">
+      <b class="modal-error__title title">ЧТО-ТО ПОШЛО НЕ ТАК!</b>
+      <p class="modal-error__description description">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
+      <button class="modal-error__button-submit button" type="button">OK</button>
+    </div>
   </div>
-  <div class="popup popup--sent">
-    <b class="popup__title title">Ваш отзыв отправлен!</b>
-    <p class="popup__description description">Спасибо за ваше участие, ваш отзыв уже поступил к нам. В ближайшее время мы опубликуем его на сайте.</p>
-    <div class="popup__footer">
-      <button class="popup__button-submit button" type="button">ЗАкРЫТЬ ОКНО</button>
+  <div class="modal-success modal-success--active">
+    <div class="modal-success__content">
+      <b class="modal-success__title title">Ваш отзыв отправлен!</b>
+      <p class="modal-success__description description">Спасибо за ваше участие, ваш отзыв уже поступил к нам. <br> В ближайшее время мы опубликуем его на сайте.</p>
+      <div class="modal-success__footer">
+        <button class="modal-success__button-submit button" type="button">ЗАкРЫТЬ ОКНО</button>
+      </div>
     </div>
   </div>
 </body>

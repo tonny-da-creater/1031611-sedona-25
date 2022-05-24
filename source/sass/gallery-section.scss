@@ -1,9 +1,21 @@
-.gallery-section--wrapper {
+.gallery-section {
+  background-color: $white;
+}
+
+.gallery-section__wrapper {
   margin: 0 auto;
   max-width: 648px;
   padding-top: 10px;
 
+  @media all and (min-width: $tablet) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 480px auto auto;
+  }
+
   @media all and (min-width: $desktop) {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 400px 267px;
     padding-top: 45px;
     max-width: 100%;
   }
