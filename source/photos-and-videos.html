@@ -50,10 +50,10 @@
           <a class="main-nav__link site-list__link" href="htmlacademy.html" >HTML ACADEMY</a>
         </li>
       </ul>
+      <button class="main-nav__toggle" type="button">
+        <span class="visually-hidden">Открыть меню</span>
+      </button>
     </nav>
-    <button class="main-nav__toggle" type="button">
-      <span class="visually-hidden">Открыть меню</span>
-    </button>
   </header>
   <main class="main-content main-content--wrapper">
     <h1 class="visually-hidden">Галерея</h1>
@@ -65,17 +65,17 @@
       <h2 class="about__title title">фото и видео</h2>
       <p class="about__description about__description--fix-width description">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и экономике.</p>
     </section>
-    <ul class="gallery-section gallery-list">
-      <div class="gallery-section__wrapper">
+    <div class="gallery-section gallery-list">
+      <ul class="gallery-section__wrapper">
         <li class="gallery-list__item">
           <a class="gallery-list__link-img" href="img/gallery-sedona-road-desktop.jpg">
             <picture>
-              <source type="image/webp" srcset="img/gallery-sedona-road-desktop.webp, img/gallery-sedona-road-desktop@2x.webp">
-              <source type="image/webp" srcset="img/gallery-sedona-road-tablet.webp, img/gallery-sedona-road-tablet@2x.webp">
-              <source type="image/webp" srcset="img/gallery-sedona-road-mobile.webp, img/gallery-sedona-road-mobile@2x.webp">
-              <source media="(min-width: 1200px)" srcset="img/gallery-sedona-road-desktop.jpg, img/gallery-sedona-road-desktop@2x.jpg">
-              <source media="(min-width: 768px)" srcset="img/gallery-sedona-road-tablet.jpg, img/gallery-sedona-road-tablet@2x.jpg">
-              <img class="gallery-list__img" width="280" height="280" loading="lazy" src="img/gallery-sedona-road-mobile.jpg" srcset="img/gallery-sedona-road-mobile@2x.jpg" alt="дорога Седоны">
+              <source type="image/webp" srcset="img/gallery-sedona-road-desktop.webp 1x, img/gallery-sedona-road-desktop@2x.webp 2x">
+              <source type="image/webp" srcset="img/gallery-sedona-road-tablet.webp 1x, img/gallery-sedona-road-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="img/gallery-sedona-road-mobile.webp 1x, img/gallery-sedona-road-mobile@2x.webp 2x">
+              <source media="(min-width: 1200px)" srcset="img/gallery-sedona-road-desktop.jpg 1x, img/gallery-sedona-road-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)" srcset="img/gallery-sedona-road-tablet.jpg 1x, img/gallery-sedona-road-tablet@2x.jpg 2x">
+              <img class="gallery-list__img" width="280" height="280" loading="lazy" src="img/gallery-sedona-road-mobile.jpg" srcset="img/gallery-sedona-road-mobile@2x.jpg 2x" alt="дорога Седоны">
             </picture>
           </a>
           <div class="gallery-list__item-footer">
@@ -92,12 +92,12 @@
         <li class="gallery-list__item">
           <a class="gallery-list__link-img" href="img/gallery-vegetation-desktop.jpg">
             <picture>
-              <source type="image/webp" srcset="img/gallery-vegetation-desktop.webp, img/gallery-vegetation-desktop@2x.webp">
-              <source type="image/webp" srcset="img/gallery-vegetation-tablet.webp, img/gallery-vegetation-tablet@2x.webp">
-              <source type="image/webp" srcset="img/gallery-vegetation-mobile.webp, img/gallery-vegetation-mobile@2x.webp">
-              <source media="(min-width: 1200px)" srcset="img/gallery-vegetation-desktop.jpg, gallery-vegetation-desktop@2x.jpg">
-              <source media="(min-width: 768px)" srcset="img/gallery-vegetation-tablet.jpg, gallery-vegetation-tablet@2x.jpg">
-              <img class="gallery-list__img" width="280" height="280" loading="lazy" src="img/gallery-vegetation-mobile.jpg" srcset="img/gallery-vegetation-mobile@2x.jpg" alt="Растительность Седоны">
+              <source type="image/webp" srcset="img/gallery-vegetation-desktop.webp 1x, img/gallery-vegetation-desktop@2x.webp 2x">
+              <source type="image/webp" srcset="img/gallery-vegetation-tablet.webp 1x, img/gallery-vegetation-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="img/gallery-vegetation-mobile.webp 1x, img/gallery-vegetation-mobile@2x.webp 2x">
+              <source media="(min-width: 1200px)" srcset="img/gallery-vegetation-desktop.jpg 1x, gallery-vegetation-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)" srcset="img/gallery-vegetation-tablet.jpg 1x, gallery-vegetation-tablet@2x.jpg 2x">
+              <img class="gallery-list__img" width="280" height="280" loading="lazy" src="img/gallery-vegetation-mobile.jpg" srcset="img/gallery-vegetation-mobile@2x.jpg 2x" alt="Растительность Седоны">
             </picture>
           </a>
           <div class="gallery-list__item-footer">
@@ -114,12 +114,12 @@
         <li class="gallery-list__item">
           <a class="gallery-list__link-img" href="img/gallery-road-to-the-north-desktop.jpg">
             <picture>
-              <source type="images/webp" srcset="img/gallery-road-to-the-north-desktop.webp, img/gallery-road-to-the-north-desktop@2x.webp">
-              <source type="images/webp" srcset="img/gallery-road-to-the-north-tablet.webp, img/gallery-road-to-the-north-tablet@2x.webp">
-              <source type="images/webp" srcset="img/gallery-road-to-the-north-mobile.webp, img/gallery-road-to-the-north-mobile@2x.webp">
-              <source media="(min-width: 1200px)" srcset="img/gallery-road-to-the-north-desktop.jpg, img/gallery-road-to-the-north-desktop@2x.jpg">
-              <source media="(min-width: 768px)" srcset="img/gallery-road-to-the-north-tablet.jpg, img/gallery-road-to-the-north-tablet@2x.jpg">
-              <img class="gallery-list__img" width="280" height="280" loading="lazy" src="img/gallery-road-to-the-north-mobile.jpg" srcset="img/gallery-road-to-the-north-mobile@2x.jpg" alt="Дорога на север">
+              <source type="images/webp" srcset="img/gallery-road-to-the-north-desktop.webp 1x, img/gallery-road-to-the-north-desktop@2x.webp 2x">
+              <source type="images/webp" srcset="img/gallery-road-to-the-north-tablet.webp 1x, img/gallery-road-to-the-north-tablet@2x.webp 2x">
+              <source type="images/webp" srcset="img/gallery-road-to-the-north-mobile.webp 1x, img/gallery-road-to-the-north-mobile@2x.webp 2x">
+              <source media="(min-width: 1200px)" srcset="img/gallery-road-to-the-north-desktop.jpg 1x, img/gallery-road-to-the-north-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)" srcset="img/gallery-road-to-the-north-tablet.jpg 1x, img/gallery-road-to-the-north-tablet@2x.jpg 2x">
+              <img class="gallery-list__img" width="280" height="280" loading="lazy" src="img/gallery-road-to-the-north-mobile.jpg" srcset="img/gallery-road-to-the-north-mobile@2x.jpg 2x" alt="Дорога на север">
             </picture>
           </a>
           <div class="gallery-list__item-footer">
@@ -136,12 +136,12 @@
         <li class="gallery-list__item">
           <a class="gallery-list__link-img" href="img/gallery-devils-bridge-desktop.jpg">
             <picture>
-              <source type="image/webp" srcset="img/gallery-devils-bridge-desktop.webp, img/gallery-devils-bridge-desktop@2x.webp">
-              <source type="image/webp" srcset="img/gallery-devils-bridge-tablet.webp, img/gallery-devils-bridge-tablet@2x.webp">
-              <source type="image/webp" srcset="img/gallery-devils-bridge-mobile.webp, img/gallery-devils-bridge-mobile@2x.webp">
-              <source media="(min-width: 1200px)" srcset="img/gallery-devils-bridge-desktop.jpg, img/gallery-devils-bridge-desktop@2x">
-              <source media="(min-width: 768px)" srcset="img/gallery-devils-bridge-tablet.jpg, img/gallery-devils-bridge-tablet@2x">
-              <img class="gallery-list__img" width="280" height="280" loading="lazy" src="img/gallery-devils-bridge-mobile.jpg" srcset="img/gallery-devils-bridge-mobile@2x.jpg" alt="Мост Дьявола в Седоне">
+              <source type="image/webp" srcset="img/gallery-devils-bridge-desktop.webp 1x, img/gallery-devils-bridge-desktop@2x.webp 2x">
+              <source type="image/webp" srcset="img/gallery-devils-bridge-tablet.webp 1x, img/gallery-devils-bridge-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="img/gallery-devils-bridge-mobile.webp 1x, img/gallery-devils-bridge-mobile@2x.webp 2x">
+              <source media="(min-width: 1200px)" srcset="img/gallery-devils-bridge-desktop.jpg 1x, img/gallery-devils-bridge-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)" srcset="img/gallery-devils-bridge-tablet.jpg 1x, img/gallery-devils-bridge-tablet@2x.jpg 2x">
+              <img class="gallery-list__img" width="280" height="280" loading="lazy" src="img/gallery-devils-bridge-mobile.jpg" srcset="img/gallery-devils-bridge-mobile@2x.jpg 2x" alt="Мост Дьявола в Седоне">
             </picture>
           </a>
           <div class="gallery-list__item-footer">
@@ -155,21 +155,13 @@
             </div>
           </div>
         </li>
-      </div>
-    </ul>
+      </ul>
+    </div>
     <section class="video-presentation-section video-presentation-section--wrapper">
       <h3 class="visually-hidden">Видео о Седоне</h3>
       <b class="video-presentation-section__title title">Все еще сомневаетесь?</b>
       <p class="video-presentation-section__description description">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
-      <!-- <picture>
-        <source type="image/webp" srcset="img/video-preview-desktop.webp, img/video-preview-desktop@2x.webp">
-        <source type="image/webp" srcset="img/video-preview-tablet.webp, img/video-preview-tablet@2x.webp">
-        <source type="image/webp" srcset="img/video-preview-mobile.webp, img/video-preview-mobile@2x.webp">
-        <source media="(min-width: 1200px)" srcset="img/video-preview-desktop.jpg, img/video-preview-desktop@2x.jpg">
-        <source media="(min-width: 768px)" srcset="img/video-preview-tablet.jpg, img/video-preview-tablet@2x.jpg">
-        <img class="video-presentation-section__video-preview" width="280" height="177" loading="lazy" src="img/video-preview-mobile.jpg" srcset="img/video-preview-mobile@2x.jpg" alt="превью видео">
-      </picture> -->
-      <iframe class="video-presentation-section__video-preview" width="280" height="177" src="https://www.youtube.com/embed/gA6pxmdMiOQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <iframe class="video-presentation-section__video-preview" width="280" height="177" src="https://www.youtube.com/embed/gA6pxmdMiOQ" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </section>
   </main>
   <footer class="main-footer">

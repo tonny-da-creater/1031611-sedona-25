@@ -43,6 +43,7 @@
   max-width: 800px;
   object-fit: cover;
   margin: 0 auto;
+  border: 0;
 
   @media all and (min-width: $tablet) {
     height: 500px;
