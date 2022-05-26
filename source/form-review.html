@@ -35,7 +35,7 @@
         </svg>
       </a>
     </div>
-    <nav class="main-nav main-nav--opened main-nav--wrapper">
+    <nav class="main-nav main-nav--opened main-nav--wrapper main-nav--nojs">
       <ul class="main-nav__list site-list">
         <li class="main-nav__item site-list__item">
           <a class="main-nav__link site-list__link" href="index.html">Главная</a>
@@ -50,10 +50,10 @@
           <a class="main-nav__link site-list__link" href="htmlacademy.html" >HTML ACADEMY</a>
         </li>
       </ul>
+      <button class="main-nav__toggle" type="button">
+        <span class="visually-hidden">Открыть меню</span>
+      </button>
     </nav>
-    <button class="main-nav__toggle" type="button">
-      <span class="visually-hidden">Открыть меню</span>
-    </button>
   </header>
   <main class="main-content main-content--wrapper">
     <h1 class="visually-hidden">Форма отпрвки отзывы</h1>
@@ -111,13 +111,13 @@
           <b class="form__title title">Ваше Общее впечатление:</b>
           <div class="form__type-radio-group-container">
             <p class="form__item-wrapper">
-              <input class="form__input form__input--radio" type="radio" name="grade" id="positive"><label class="form__label" for="positive">Скорее положительное</label>
+              <input class="form__input form__input--radio" type="radio" name="grade" id="positive"><label class="form__label" for="positive" tabindex="0">Скорее положительное</label>
             </p>
             <p class="form__item-wrapper">
-              <input class="form__input form__input--radio" type="radio" name="grade" id="negative"><label class="form__label" for="negative">Скорее отрицательное</label>
+              <input class="form__input form__input--radio" type="radio" name="grade" id="negative"><label class="form__label" for="negative" tabindex="0">Скорее отрицательное</label>
             </p>
             <p class="form__item-wrapper">
-              <input class="form__input form__input--radio" type="radio" name="grade" id="dont-know"><label class="form__label" for="dont-know">Затрудняюсь ответить</label>
+              <input class="form__input form__input--radio" type="radio" name="grade" id="dont-know"><label class="form__label" for="dont-know" tabindex="0">Затрудняюсь ответить</label>
             </p>
           </div>
         </div>
@@ -125,16 +125,16 @@
           <b class="form__title title">посещенные  достопримечательности:</b>
           <div class="form__type-checkbox-group-container">
             <p class="form__item-wrapper">
-              <input class="form__input form__input--checkbox" id="devils-bridge" type="checkbox" checked><label class="form__label" for="devils-bridge">Мост Дьявола</label>
+              <input class="form__input form__input--checkbox" id="devils-bridge" type="checkbox" checked><label class="form__label" for="devils-bridge" tabindex="0">Мост Дьявола</label>
             </p>
             <p class="form__item-wrapper">
-              <input class="form__input form__input--checkbox" id="mount-bell" type="checkbox" checked><label class="form__label" for="mount-bell">Гора-Колокол</label>
+              <input class="form__input form__input--checkbox" id="mount-bell" type="checkbox" checked><label class="form__label" for="mount-bell" tabindex="0">Гора-Колокол</label>
             </p>
             <p class="form__item-wrapper">
-              <input class="form__input form__input--checkbox" id="slide-park" type="checkbox" checked><label class="form__label" for="slide-park">Слайд-парк</label>
+              <input class="form__input form__input--checkbox" id="slide-park" type="checkbox" checked><label class="form__label" for="slide-park" tabindex="0">Слайд-парк</label>
             </p>
             <p class="form__item-wrapper">
-              <input class="form__input form__input--checkbox" id="red-rocks" type="checkbox"><label class="form__label" for="red-rocks">Красные скалы</label>
+              <input class="form__input form__input--checkbox" id="red-rocks" type="checkbox"><label class="form__label" for="red-rocks" tabindex="0">Красные скалы</label>
             </p>
           </div>
         </div>
@@ -204,5 +204,6 @@
       </div>
     </div>
   </div>
+  <script src="js/script.js"></script>
 </body>
 </html>

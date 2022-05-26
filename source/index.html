@@ -35,7 +35,7 @@
         </svg>
       </a>
     </div>
-    <nav class="main-nav main-nav--opened main-nav--wrapper">
+    <nav class="main-nav main-nav--opened main-nav--wrapper main-nav--nojs">
       <ul class="main-nav__list site-list">
         <li class="main-nav__item site-list__item site-list__item--current">
           <a class="main-nav__link site-list__link" href="index.html">Главная</a>
@@ -50,10 +50,10 @@
           <a class="main-nav__link site-list__link" href="htmlacademy.html" >HTML ACADEMY</a>
         </li>
       </ul>
+      <button class="main-nav__toggle" type="button">
+        <span class="visually-hidden">Открыть меню</span>
+      </button>
     </nav>
-    <button class="main-nav__toggle" type="button">
-      <span class="visually-hidden">Открыть меню</span>
-    </button>
   </header>
   <main class="main-content main-content--wrapper">
     <section class="entry-section entry-section--wrapper entry-section--wrapper-main-page">
@@ -74,12 +74,12 @@
       </div>
       <div class="attractions__picture-wrapper">
         <picture>
-          <source type="image/webp" srcset="img/sedona-house-desktop.webp, img/sedona-house-desktop@2x.webp">
-          <source type="image/webp" srcset="img/sedona-house-tablet.webp, img/sedona-house-tablet@2x.webp">
-          <source type="image/webp" srcset="img/sedona-house-mobile.webp, img/sedona-house-mobile@2x.webp">
-          <source media="(min-width: 1200px)" srcset="img/sedona-house-desktop.jpg, img/sedona-house-desktop@2x.jpg">
-          <source media="(min-width: 768px)" srcset="img/sedona-house-tablet.jpg, img/sedona-house-tablet@2x.jpg">
-          <img class="attractions__img" src="img/sedona-house-mobile.jpg" srcset="img/sedona-house-mobile@2x.jpg" loading="lazy" width="520" height="260" alt="Дом в Седоне">
+          <source type="image/webp" srcset="img/sedona-house-desktop.webp 1x, img/sedona-house-desktop@2x.webp 2x">
+          <source type="image/webp" srcset="img/sedona-house-tablet.webp 1x, img/sedona-house-tablet@2x.webp 2x">
+          <source type="image/webp" srcset="img/sedona-house-mobile.webp 1x, img/sedona-house-mobile@2x.webp 2x">
+          <source media="(min-width: 1200px)" srcset="img/sedona-house-desktop.jpg 1x, img/sedona-house-desktop@2x.jpg 2x">
+          <source media="(min-width: 768px)" srcset="img/sedona-house-tablet.jpg 1x, img/sedona-house-tablet@2x.jpg 2x">
+          <img class="attractions__img" src="img/sedona-house-mobile.jpg" srcset="img/sedona-house-mobile@2x.jpg 2x" loading="lazy" width="520" height="260" alt="Дом в Седоне">
         </picture>
       </div>
     </section>
@@ -116,12 +116,12 @@
       </div>
       <div class="attractions__picture-wrapper attractions__picture-wrapper--">
         <picture>
-          <source type="image/webp" srcset="img/sedona-rocks-desktop.webp, img/sedona-rocks-desktop@2x.webp">
-          <source type="image/webp" srcset="img/sedona-rocks-tablet.webp, img/sedona-rocks-tablet@2x.webp">
-          <source type="image/webp" srcset="img/sedona-rocks-mobile.webp, img/sedona-rocks-mobile@2x.webp">
-          <source media="(min-width: 1200px)" srcset="img/sedona-rocks-desktop.jpg, img/sedona-rocks-desktop@2x.jpg">
-          <source media="(min-width: 768px)" srcset="img/sedona-rocks-tablet.jpg, img/sedona-rocks-tablet@2x.jpg">
-          <img class="attractions__img attractions__img--order" src="img/sedona-rocks-mobile.jpg" srcset="img/sedona-rocks-mobile@2x.jpg" loading="lazy" width="520" height="260" alt="Скалы в Седоне">
+          <source type="image/webp" srcset="img/sedona-rocks-desktop.webp 1x, img/sedona-rocks-desktop@2x.webp 2x">
+          <source type="image/webp" srcset="img/sedona-rocks-tablet.webp 1x, img/sedona-rocks-tablet@2x.webp 2x">
+          <source type="image/webp" srcset="img/sedona-rocks-mobile.webp 1x, img/sedona-rocks-mobile@2x.webp 2x">
+          <source media="(min-width: 1200px)" srcset="img/sedona-rocks-desktop.jpg 1x, img/sedona-rocks-desktop@2x.jpg 2x">
+          <source media="(min-width: 768px)" srcset="img/sedona-rocks-tablet.jpg 1x, img/sedona-rocks-tablet@2x.jpg 2x">
+          <img class="attractions__img attractions__img--order" src="img/sedona-rocks-mobile.jpg" srcset="img/sedona-rocks-mobile@2x.jpg 2x" loading="lazy" width="520" height="260" alt="Скалы в Седоне">
         </picture>
       </div>
     </section>
