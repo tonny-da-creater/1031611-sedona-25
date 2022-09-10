@@ -1,5 +1,6 @@
 {
   "name": "sedona-25",
+  "homepage": "https:/tonny-da-creater.github.io/sedona",
   "private": true,
   "description": "Личный проект «Седона» от HTML Academy",
   "devDependencies": {
@@ -7,6 +8,7 @@
     "autoprefixer": "10.4.0",
     "browser-sync": "2.27.7",
     "del": "^6.1.0",
+    "gh-pages": "^4.0.0",
     "gulp": "4.0.2",
     "gulp-dart-sass": "^1.0.2",
     "gulp-htmlmin": "^5.0.1",
@@ -27,7 +29,8 @@
     "stylelint": "stylelint \"source/sass/**/*.scss\" --syntax scss",
     "lint": "npm run editorconfig && npm run stylelint",
     "build": "gulp build",
-    "start": "gulp"
+    "start": "gulp",
+    "deploy": "gh-pages -d build"
   },
   "browserslist": [
     "last 2 versions",
