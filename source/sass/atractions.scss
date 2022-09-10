@@ -106,7 +106,7 @@
 .attractions__img {
   display: block;
   width: 100%;
-  height: 260px;
+  height: 100%;
   object-fit: cover;
 
   @media all and (min-width: $tablet) {
