@@ -39,9 +39,11 @@
 .video-presentation-section__video-preview {
   display: block;
   width: 100%;
+  min-height: 177px;
   max-width: 800px;
   object-fit: cover;
   margin: 0 auto;
+  border: 0;
 
   @media all and (min-width: $tablet) {
     height: 500px;

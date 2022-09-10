@@ -1,5 +1,8 @@
 .form {
   background-color: $white;
+}
+
+.form__wrapper {
   display: grid;
   grid-template-columns: 1fr;
 
@@ -130,10 +133,6 @@
     background-color: $very-light-grey;
   }
 
-  &:focus {
-    outline: none;
-  }
-
   &:active {
     background-color: $white;
     border: 4px solid $very-light-grey;
@@ -182,10 +181,6 @@
     background-color: $very-light-grey;
   }
 
-  &:focus {
-    outline: none;
-  }
-
   &:active {
     background-color: $white;
     border: 4px solid $very-light-grey;
@@ -205,7 +200,8 @@
 
 .form__input--radio,
 .form__input--checkbox {
-  display: none;
+  opacity: 0;
+  position: absolute;
 }
 
 .form__input--radio + .form__label::before {
@@ -217,7 +213,6 @@
   background-color: $pale-grey;
   border: 15px solid $pale-grey;
   vertical-align: middle;
-  margin-right: 16px;
 }
 
 .form__input--radio:checked + .form__label::before {
@@ -415,18 +410,13 @@
   }
 }
 
-.form__type-radio-group .form__item-wrapper,
-.form__type-checkbox-group .form__item-wrapper {
-  display: flex;
-  align-items: center;
-}
-
 .form__type-radio-group-container {
   display: grid;
   grid-template-columns: 1fr;
   grid-row-gap: 16px;
   width: 87.5%;
   margin: 0 auto;
+  text-align: left;
 
   @media all and (min-width: $tablet) {
     margin: 0 auto;
@@ -447,6 +437,10 @@
   font-size: $font-size-m;
   line-height: 26px;
   color: $black;
+  display: grid;
+  grid-template-columns: 46px 1fr;
+  grid-column-gap: 16px;
+  align-items: center;
 }
 
 .form__type-checkbox-group {
@@ -469,6 +463,7 @@
   grid-row-gap: 16px;
   width: 87.5%;
   margin: 0 auto;
+  text-align: left;
 
   @media all and (min-width: $tablet) {
     width: 480px;
@@ -489,6 +484,10 @@
   font-size: $font-size-m;
   line-height: 26px;
   color: $black;
+  display: grid;
+  grid-template-columns: 46px 1fr;
+  grid-column-gap: 16px;
+  align-items: center;
 }
 
 .form__type-area {
@@ -577,4 +576,9 @@
   @media all and (min-width: $desktop) {
     margin-top: 2px;
   }
+}
+
+.form__input--radio:focus-visible + .form__label,
+.form__input--checkbox:focus-visible + .form__label {
+  outline: 2px solid $black;
 }
