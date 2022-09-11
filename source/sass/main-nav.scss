@@ -125,3 +125,11 @@
     visibility: visible;
   }
 }
+
+@media all and (min-width: $tablet) {
+  .main-nav .main-nav__list {
+    opacity: 1;
+    visibility: visible;
+  }
+}
+
